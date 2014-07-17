@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 123
+=======
+123
+sublime 
+part
+>>>>>>> parent of 6d8bbea... add f
