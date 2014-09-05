@@ -1,6 +1,10 @@
 hello_world
 
+<<<<<<< HEAD
 66666
+=======
+88888
+>>>>>>> origin/master
 
 34345
 
