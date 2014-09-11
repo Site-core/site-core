@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'engineitalic';
+    src: url('engine-italic.eot');
+    src: url('engine-italic.eot?#iefix') format('embedded-opentype'),
+         url('engine-italic.woff') format('woff'),
+         url('engine-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'engineregular';
+    src: url('engine-regular.eot');
+    src: url('engine-regular.eot?#iefix') format('embedded-opentype'),
+         url('engine-regular.woff') format('woff'),
+         url('engine-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

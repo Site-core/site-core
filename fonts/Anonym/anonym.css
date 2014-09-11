@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'anonymous_pro_b';
+    src: url('anonymous_pro_b.eot');
+    src: url('anonymous_pro_b.eot?#iefix') format('embedded-opentype'),
+         url('anonymous_pro_b.woff') format('woff'),
+         url('anonymous_pro_b.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'anonymous_pro_bi';
+    src: url('anonymous_pro_bi.eot');
+    src: url('anonymous_pro_bi.eot?#iefix') format('embedded-opentype'),
+         url('anonymous_pro_bi.woff') format('woff'),
+         url('anonymous_pro_bi.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'anonymous_pro_i';
+    src: url('anonymous_pro_i.eot');
+    src: url('anonymous_pro_i.eot?#iefix') format('embedded-opentype'),
+         url('anonymous_pro_i.woff') format('woff'),
+         url('anonymous_pro_i.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'anonymous_pro';
+    src: url('anonymous_pro.eot');
+    src: url('anonymous_pro.eot?#iefix') format('embedded-opentype'),
+         url('anonymous_pro.woff') format('woff'),
+         url('anonymous_pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

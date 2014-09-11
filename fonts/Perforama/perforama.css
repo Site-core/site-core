@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'perforamaitalic';
+    src: url('perforama-italic.eot');
+    src: url('perforama-italic.eot?#iefix') format('embedded-opentype'),
+         url('perforama-italic.woff') format('woff'),
+         url('perforama-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'perforamaregular';
+    src: url('perforama.eot');
+    src: url('perforama.eot?#iefix') format('embedded-opentype'),
+         url('perforama.woff') format('woff'),
+         url('perforama.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
