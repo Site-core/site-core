@@ -1,0 +1,8 @@
+AddDefaultCharset utf-8
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9_-]+)[/]?$ index.php?page=$1 [L,NC,QSA]

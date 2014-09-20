@@ -50,11 +50,11 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	width: 94%;
+	width: 960px;
 	max-height: 1080px;
-	height: 0%;
-	padding-bottom: 42%;
-	background: url(../img/bg3.png) no-repeat center center;
+	height: 1000px;
+	
+	background: url(../img/bg6.png) no-repeat center center;
 	background-size: contain;
 }
 
