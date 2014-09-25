@@ -1,4 +1,5 @@
 <?php
+define('sCore', true);
 require("includes/config.inc.php");
 require("templates/init.tpl.php"); // Подключаем файл с классом
 

@@ -6,3 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)[/]?$ index.php?page=$1 [L,NC,QSA]
+
+ErrorDocument 404 /404.html
+ErrorDocument 403 "ERROR 403
+ErrorDocument 401 "ERROR 401
+ErrorDocument 500 "ERROR 500

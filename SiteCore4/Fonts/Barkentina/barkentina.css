@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'barkentina';
+    src: url('barkentina.eot');
+    src: url('barkentina.eot?#iefix') format('embedded-opentype'),
+         url('barkentina.woff') format('woff'),
+         url('barkentina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

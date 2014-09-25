@@ -1,0 +1,8 @@
+@media screen and (max-width: 1040px) {
+
+.wrapper {
+	width: 100%;
+	min-width: 700px;
+}
+
+}
