@@ -144,6 +144,14 @@ body {
 	border-bottom: 1px solid #4C4646;
 }
 
+.link {
+	background: url(../img/link.svg) no-repeat center center;
+}
+
+.look {
+	background: url(../img/look.svg) no-repeat center center;
+}
+
 .content {
 	position: relative;
 	margin-bottom: 95px;
@@ -363,14 +371,16 @@ background: -o-linear-gradient(left,  rgba(215,132,77,1) 0%,rgba(125,185,232,0) 
 background: -ms-linear-gradient(left,  rgba(215,132,77,1) 0%,rgba(125,185,232,0) 100%);
 background: linear-gradient(to right,  rgba(215,132,77,1) 0%,rgba(125,185,232,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', endColorstr='#007db9e8',GradientType=1 );
+
 }
+
+
 
 .slide {
 overflow: hidden;
-width: 218px;
-height: 180px;
-margin: 3% 3% 0 0;
-
+height: 210px;
+width: 210px;
+*margin: 1em 0;
 background-color: #ffc;
 border: 1px solid #999;
 float:left;
@@ -439,9 +449,9 @@ margin: 10px auto;
 width: 120px;
 }
 .link {
-	background: url(../img/link.svg) no-repeat center center;
+	background: url(img/link.svg) no-repeat center center;
 }
 
 .look {
-	background: url(../img/look.svg) no-repeat center center;
+	background: url(img/look.svg) no-repeat center center;
 }
