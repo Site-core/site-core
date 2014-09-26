@@ -10,7 +10,7 @@
 <body>
 <script>
 $(document).ready(function() {
-	var durationIn = 200;
+	var durationIn = 150;
 	var durationOut = 100;
 	var done = false;
 	$('.slide .inner').each(
@@ -19,29 +19,11 @@ $(document).ready(function() {
 		}
 	);
 	var el;
-	
-	function set_margin(edge,block) {
-		var $margin;
-		switch (edge) {
-			case 'left':
-				$margin = {'margin-left': $(block).outerWidth()};
-				break;
-			case 'right':
-				$margin = {'margin-left': -$(block).outerWidth()};
-				break;
-			case 'top':
-				$margin = {"margin-top": $(block).outerHeight()};
-				break;
-			case 'bottom':
-				$margin = {"margin-top": -$(block).outerHeight()};
-				break;
-		}
-		return $margin;
-	}
+	var dfd;
+	var promise;
 	
     $(".slide").hover(
 		function(e) {
-			
 			var $hint = $('.inner',this);
 			var edge = getSide ( $(this), { x : e.pageX, y : e.pageY } );
 		//	var edge = closestEdge(e.pageX, e.pageY, $(this).width(), $(this).height());
@@ -49,23 +31,41 @@ $(document).ready(function() {
 			var $margin = set_margin(edge,this);
 			$hint.css('margin', 0);
 			$hint.css($margin);
-			$hint.animate($action, durationIn);
-		/*	if (typeof el != 'undefined') {
-				el.promise().done(function() {
-					console.log('done');
+
+			if (typeof dfd != 'undefined') {
+
+				$.when(dfd).done(function(){
+					dfd = $.Deferred();
+					//promise = dfd.promise();
+					animation();
+				});
+			} else {	
+				dfd = $.Deferred();
+				animation();
+				//console.log(promise.state());
+			}
+			
+			function animation() {
+				$hint.animate($action, durationIn,function(){
+					dfd.resolve();
 				});
 			}
-		*/
 		},
 		function(e) {
-			
+		
 			var $hint = $('.inner',this);
-			el = $hint;
 			var edge = getSide( $(this), { x : e.pageX, y : e.pageY } );
-
 			var $action = set_margin(edge,this);
-
-			$hint.animate($action, durationOut);
+			
+			$.when(dfd).done(function(){
+				dfd = $.Deferred();
+				animation();
+			});
+			function animation() {
+				$hint.stop().animate($action, durationOut,function(){
+					dfd.resolve();
+				});
+			}
 		}
 	);
 
@@ -106,6 +106,25 @@ $(document).ready(function() {
 		};
 	};
 });
+
+function set_margin(edge,block) {
+	var $margin;
+	switch (edge) {
+		case 'left':
+			$margin = {'margin-left': $(block).outerWidth()};
+			break;
+		case 'right':
+			$margin = {'margin-left': -$(block).outerWidth()};
+			break;
+		case 'top':
+			$margin = {"margin-top": $(block).outerHeight()};
+			break;
+		case 'bottom':
+			$margin = {"margin-top": -$(block).outerHeight()};
+			break;
+	}
+	return $margin;
+}
 </script>
 <style>
 .slide {
