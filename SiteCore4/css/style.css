@@ -140,6 +140,7 @@ p, h2 {
 	font-family: 'barkentina';
 }
 
+<<<<<<< HEAD
 .gear_right {
 	background-color: transparent !important;
 	height: 46px;
@@ -176,8 +177,18 @@ p, h2 {
 	position: relative;
 	vertical-align: middle;
 	bottom: -3px;
+=======
+.slider{
+	width: 80%;
+	margin: 0 auto;
+	*height: 250px;
+	*border: 1px solid #4C4646;
+	margin: 50px auto;
+>>>>>>> origin/master
 }
+.slide {
 
+<<<<<<< HEAD
 .gear_footer:before {
 	right: 25px;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkYjllOCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNzg0NGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -191,6 +202,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', e
 
 
 
+=======
+height:250px;
+>>>>>>> origin/master
 }
 .gear_footer:after {
 	left: 25px;
@@ -204,6 +218,7 @@ background: linear-gradient(to right,  rgba(215,132,77,1) 0%,rgba(125,185,232,0)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', endColorstr='#007db9e8',GradientType=1 );
 }
 
+<<<<<<< HEAD
 .hi-scriptor p{
 	margin: 0 auto;
 	width: 80%;
@@ -211,6 +226,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', end
 	font-family: 'barkentina';
 	font-size: 22px;
 	color: #4C4646;
+=======
+.slider_control > a {
+	width: 21%;
+	height: 0%;
+	padding-bottom: 12%;
+	float: left;
+	margin-left: 5.3%;
+	border: 1px solid #4C4646;
+>>>>>>> origin/master
 }
 
 .inner h2 {
@@ -470,7 +494,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 	margin-left: 0;
 }
 
-.slide {
+.thumbnail {
 overflow: hidden;
 width: 218px;
 height: 180px;
@@ -480,7 +504,7 @@ background-color: rgba(255, 255, 255, 0.47);
 float:left;
 }
 
-.slide .inner {
+.thumbnail .description {
 width: 100%;
 height: 100%;
 padding:0;
@@ -490,6 +514,29 @@ position:relative;
 }
 
 .slide a {
+=======
+.top_left_bort {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin: 0;
+	top: 5px;
+	left: 5px;
+	border-top: 1px solid #4C4646;
+	border-left: 1px solid #4C4646;
+}
+.bottom_right_bort {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin: 0 !important;
+	bottom: 5px;
+	right: 5px;
+	border-right: 1px solid #4C4646;
+	border-bottom: 1px solid #4C4646;
+}
+.thumbnail a {
+>>>>>>> origin/master
 	background-size: contain !important;
 	float: left;
 	margin: 0 10px;
@@ -497,16 +544,31 @@ position:relative;
 	width: 40px;
 	height: 25px;
 }
+<<<<<<< HEAD
 
 .slide p {
+=======
+.description h2 {
+	text-align: center;
+	font-size: 18px;
+	color: #4C4646;
+	font-family: 'barkentina';
+	margin-top: 30px;
+}
+.thumbnail p {
+>>>>>>> origin/master
 	text-align: center;
 	font-size: 15px;
 	color: #4C4646;
 	font-family: 'barkentina';
 	margin-top: 6px;
 }
+<<<<<<< HEAD
 
 .slide > div > div {
+=======
+.thumbnail > div > div {
+>>>>>>> origin/master
 	background-color:rgba(215, 132, 77, 0.6);
 	top:5px;
 	bottom:5px;
@@ -514,6 +576,10 @@ position:relative;
 	right:5px;
 	position:absolute;
 }
+<<<<<<< HEAD
+=======
+.description > div > div:nth-of-type(2) {
+>>>>>>> origin/master
 
 .top_left_bort {
 	width: 50px !important;
