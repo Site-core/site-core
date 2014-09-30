@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var durationIn = 150;
 	var durationOut = 100;
 	var done = false;
-	$('.slide .inner').each(
+	$('.thumbnail .description').each(
 		function() {
 			$(this).css('marginTop',$(this).parent().outerHeight());
 		}
@@ -11,9 +11,9 @@ $(document).ready(function() {
 	var dfd;
 	var promise;
 	
-    $(".slide").hover(
+    $(".thumbnail").hover(
 		function(e) {
-			var $hint = $('.inner',this);
+			var $hint = $('.description',this);
 			var edge = getSide ( $(this), { x : e.pageX, y : e.pageY } );
 		//	var edge = closestEdge(e.pageX, e.pageY, $(this).width(), $(this).height());
 			var $action = {'margin':0};
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		},
 		function(e) {
 		
-			var $hint = $('.inner',this);
+			var $hint = $('.description',this);
 			var edge = getSide( $(this), { x : e.pageX, y : e.pageY } );
 			var $action = set_margin(edge,this);
 			

@@ -13,6 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="css/slideInRight.css">
 	<link rel="stylesheet" type="text/css" href="css/slideInUp.css">
 	<link rel="stylesheet" type="text/css" href="css/fadeIn.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	
 </head>
 <body>
 
@@ -29,21 +33,27 @@
 	</div>
 	<div class="content">
 		<div class="slider">
-			<div class="slider_window">
-				<div class="slider_roll">
-					<div><p></p></div>
-					<div><p></p></div>
-					<div><p></p></div>
-					<div><p></p></div>
-				</div>
-			</div>
+			<ul class="slider_window">
+			  <li class="slide">Сайт визитка</li>
+			  <li class="slide">Корпаративный сайт</li>
+			  <li class="slide">Интернет-Магазин</li>
+			</ul>
 			<div class="slider_control">
-				<div class="slider_visit"></div>
-				<div class="slider_corp"></div>
-				<div class="slider_shop"></div>
-				<div class="slider_blog"></div>
+			  <a data-slide-index="0" href="">Сайт визитка</a>
+			  <a data-slide-index="1" href="">Корпаративный сайт</a>
+			  <a data-slide-index="2" href="">Интернет-Магазин</a>
 			</div>
 		</div>
+		<script>
+			$(document).ready(function(){
+				$('.slider_window').bxSlider({
+					pagerCustom: '.slider_control',
+					//slideWidth: 600,
+					infiniteLoop:false,
+					controls: false
+				});
+			});
+		</script>
 	</div>
 </div>
 <div class="footer animated fadeIn">
