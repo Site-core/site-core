@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var durationIn = 150;
-	var durationOut = 100;
+	var durationIn = 210;
+	var durationOut = 170;
 	var done = false;
 	$('.slide .inner').each(
 		function() {

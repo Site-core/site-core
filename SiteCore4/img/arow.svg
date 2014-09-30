@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="224px" height="106px" viewBox="0 -10.534 224 106" enable-background="new 0 -10.534 224 106"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path fill="#373637" d="M44.928,91.846C24.152,71.149,12.711,43.645,12.711,14.402c0-4.413,0.273-8.889,0.812-13.304L13.677,0H0v2
+	h11.422c-0.459,4.123-0.703,8.288-0.703,12.402c0,29.401,11.403,57.155,32.108,78.151l0.147,0.147h2.811L44.928,91.846z"/>
+<path fill="#373637" d="M178.799,91.846c20.775-20.697,32.217-48.201,32.217-77.444c0-4.413-0.272-8.889-0.812-13.304L210.05,0
+	h15.017v2h-12.762c0.459,4.123,0.702,8.288,0.702,12.402c0,29.401-11.403,57.155-32.108,78.151l-0.146,0.147h-2.812L178.799,91.846z
+	"/>
+<polygon fill="#373637" points="112,72.288 69.186,38.202 64.855,41.649 112,79.182 159.145,41.649 154.814,38.202 "/>
+<polygon fill="#373637" points="112,44.163 69.186,10.077 64.855,13.524 112,51.057 159.145,13.524 154.814,10.077 "/>
+</svg>
