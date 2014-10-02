@@ -14,13 +14,6 @@ body {
 p, h2 {
 	font-family: 'barkentina';
 }
-.wrapper {
-	margin: 0 auto;
-	width: 1000px;
-	border: 1px solid transparent;
-	min-height: 100%;
-	
-}
 
 .bg_main {
 	height: 615px;
@@ -71,7 +64,7 @@ p, h2 {
 
 .content {
 	position: relative;
-	padding-bottom: 225px;
+	padding-bottom: 100px;
 }
 
 .content h1 {
@@ -85,6 +78,7 @@ p, h2 {
 	float: left;
 	width: 33.3%;
 }
+
 .contacts li p {
 	margin: 48px auto 10px;
 	text-align: center;
@@ -102,6 +96,17 @@ p, h2 {
 	color: #4C4646;
 }
 
+.description h2 {
+	text-align: center;
+	font-size: 18px;
+	color: #4C4646;
+	font-family: 'barkentina';
+	margin-top: 30px;
+}
+.description > div > div:nth-of-type(2) {
+	margin: 10px auto;
+	width: 120px;
+}
 
 .description p {
 	color: #6F6F6F;
@@ -188,25 +193,12 @@ background: linear-gradient(to right,  rgba(215,132,77,1) 0%,rgba(125,185,232,0)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', endColorstr='#007db9e8',GradientType=1 );
 }
 .hi-scriptor p{
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 80%;
 	text-align: center;
 	font-family: 'barkentina';
 	font-size: 22px;
 	color: #4C4646;
-}
-
-.description h2 {
-	text-align: center;
-	font-size: 18px;
-	color: #4C4646;
-	font-family: 'barkentina';
-	margin-top: 30px;
-}
-.description > div > div:nth-of-type(2) {
-
-margin: 10px auto;
-width: 120px;
 }
 
 .left_des {
@@ -218,6 +210,7 @@ width: 120px;
 }
 
 .logo {
+	width: 40%;
 	display: block;
 	text-align: center;
 	margin: 20px auto 10px;
@@ -226,6 +219,61 @@ width: 120px;
 	font-size: 25px;
 	font-family: 'barkentina';
 	color: #4C4646;
+}
+
+.logo:before {
+	opacity: 0.7;
+	margin-top: 20px;
+	float: left;
+	content: "";
+	display: block;
+	height: 1px;
+	width: 34%;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkYjllOCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0YzQ2NDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(125,185,232,0) 0%, rgba(76,70,70,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(125,185,232,0)), color-stop(100%,rgba(76,70,70,1)));
+background: -webkit-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(76,70,70,1) 100%);
+background: -o-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(76,70,70,1) 100%);
+background: -ms-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(76,70,70,1) 100%);
+background: linear-gradient(to right,  rgba(125,185,232,0) 0%,rgba(76,70,70,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#4c4646',GradientType=1 );
+
+}
+
+.logo:after {
+	opacity: 0.7;
+	margin-top: 20px;
+	float: right;
+	content: "";
+	display: block;
+	height: 1px;
+	width: 34%;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRjNDY0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(76,70,70,1) 0%, rgba(125,185,232,0) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(76,70,70,1)), color-stop(100%,rgba(125,185,232,0)));
+background: -webkit-linear-gradient(left,  rgba(76,70,70,1) 0%,rgba(125,185,232,0) 100%);
+background: -o-linear-gradient(left,  rgba(76,70,70,1) 0%,rgba(125,185,232,0) 100%);
+background: -ms-linear-gradient(left,  rgba(76,70,70,1) 0%,rgba(125,185,232,0) 100%);
+background: linear-gradient(to right,  rgba(76,70,70,1) 0%,rgba(125,185,232,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4646', endColorstr='#007db9e8',GradientType=1 );
+
+}
+
+.logo:hover {
+	transition: all 0.3s ease 0;
+	color: black;
+	width: 60%;
+}
+
+.logo:hover:after {
+	transition: all 0.3s ease 0;
+	opacity: 1;
+	width: 39.4%;
+}
+.logo:hover:before {
+	transition: all 0.3s ease 0;
+	opacity: 1;
+	width: 39.4%;
 }
 
 .look {
@@ -276,6 +324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .more_scroll h2 {
+	color: #4C4646;
 	vertical-align: middle;
 	line-height: 48px;
 	text-align: center;
@@ -411,28 +460,53 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .slider{
-	width: 80%;
+	padding-bottom: 60px;
+	width: 100%;
 	margin: 0 auto;
-	*height: 250px;
-	*border: 1px solid #4C4646;
 	margin: 50px auto;
+	overflow: hidden;
 }
 .slide {
-
-height:250px;
+		width: 33.333%;
+		height:250px;
+		float: left;
 }
 
 .slider_control > a {
-	width: 21%;
-	height: 0%;
-	padding-bottom: 12%;
+	width: 30%;
 	float: left;
-	margin-left: 5.3%;
-	border: 1px solid #4C4646;
+	margin-left: 5%;
 }
 
-.slider_control > div:first-child {
+.slider_control > a:first-child {
 	margin-left: 0;
+}
+
+.slider_control > a > div {
+	position: relative;
+	width: 100%;
+	height: 125px;
+	border: 1px solid  rgba(76, 70, 70, 0.72);
+}
+
+.slider_control > a > div h2 {
+	color: #4C4646;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.slider_control > a > div p {
+	color: #4C4646;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.slider_window {
+	width: 300%;
+	height: 100%;
+	
 }
 
 .thumbnail {
@@ -490,4 +564,11 @@ position:relative;
 	left: 5px;
 	border-top: 1px solid #4C4646;
 	border-left: 1px solid #4C4646;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	border: 1px solid transparent;
+	min-height: 100%;
 }
