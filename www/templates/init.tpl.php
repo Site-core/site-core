@@ -44,6 +44,13 @@ class template {
 			$file_contents = $this->parse_file($file_contents);
 		return $file_contents;
 	}
+	
+	function sec_pgs($pages) {
+		GLOBAL $session_controller;
+		if (!$session_controller->authorized) {
+			$this->sec_pgs = explode(",", $pages);
+		}
+	}
 
 // Обработчик страниц
 	function set_content () {
