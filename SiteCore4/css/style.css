@@ -431,6 +431,27 @@ height:250px;
 	border: 1px solid #4C4646;
 }
 
+.slider_control > div {
+	position: relative;
+	width: 30%;
+	height: 125px;
+	float: left;
+	margin-left: 5%;
+	border: 1px solid  rgba(76, 70, 70, 0.72);
+}
+
+.slider_control > div h2 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.slider_control > div p {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
 .slider_control > div:first-child {
 	margin-left: 0;
 }
