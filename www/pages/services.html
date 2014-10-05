@@ -48,31 +48,29 @@
 			<object type="image/svg+xml" data="img/arow.svg"></object>
 		</div>
 	</div>
-		<script>
-			$(document).ready(function(){
-				slider = $('.slider_window').bxSlider({
-					mode:'fade',
-					pagerCustom: '.slider_control',
-					//slideWidth: 600,
-					infiniteLoop:false,
-					controls: false
-				});
-					switch(window.location.hash){
-						case '#visit':
-							slider.goToSlide(0);
-							break;
-						case '#corp':
-							slider.goToSlide(1);
-							break;
-						case '#shop':
-							slider.goToSlide(2);
-							break;
-						 default:
-							window.location.hash='visit';
-
-					}
+	<script>
+		$(document).ready(function(){
+			slider = $('.slider_window').bxSlider({
+				mode:'fade',
+				pagerCustom: '.slider_control',
+				//slideWidth: 600,
+				infiniteLoop:false,
+				controls: false
 			});
-		</script>
-		<button onclick="window.location.hash = 'something';">
+			switch(window.location.hash){
+				case '#visit':
+					slider.goToSlide(0);
+					break;
+				case '#corp':
+					slider.goToSlide(1);
+					break;
+				case '#shop':
+					slider.goToSlide(2);
+					break;
+				 default:
+					window.location.hash='visit';
+			}
+		});
+	</script>
 	</div>
 </div>
