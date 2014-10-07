@@ -54,7 +54,8 @@ p, h2, h3 {
 .active .cirkle {
 	color: #d7844d
 }
-path, polygon {
+.style0, .style0 {fill:black}
+#Flex path, #Flex  polygon {
 		fill: curentColor;
 		}
 
