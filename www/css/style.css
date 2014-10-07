@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	 fill: currentColor;
 	height: 100%;
 	background: url(/img/hexellence.png) fixed !important;
 }
@@ -37,22 +38,46 @@ p, h2, h3 {
 }
 
 .cirkle {
+	color: blue;
+  fill: currentColor;
 	z-index: 2;
 	position: absolute;
 	margin: auto;
 	left: 0;
 	right: 0;
 	bottom: -25px;
-	width: 100px;
+	width: 102px;
 	height: 26px;
 	background: url(/img/hexellence.png) center center;
 }
 
-.cirkle object {
+.active .cirkle {
+	color: #d7844d
+}
+path, polygon {
+		fill: curentColor;
+		}
+
+.cirkle > div {
 	margin-top: -5px;
-	opacity: 0.7;
-	width: 100px;
+	width: 100%;
 	height: 48px;
+	background-size: contain !important;
+}
+
+.shop {
+	margin-top: -3px;
+	background: url(../img/Market.svg) no-repeat center center;
+}
+
+.visit {
+	margin-top: 1px !important;
+	background: url(../img/Visited-Site.svg) no-repeat center center;
+}
+
+.corp {
+	
+	background: url(../img/Corp_site.svg) no-repeat center center;
 }
 
 .clear-fix:after {
