@@ -314,7 +314,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4646', end
 	margin-top: 20px;
 }
 
-.more_scroll:hover svg {
+.more_scroll:active svg {
 	fill:#d7844d;
 }
 
