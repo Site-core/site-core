@@ -169,18 +169,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	color: #d7844d !important;
 }
 
-.active .shop{
-		
-		background: url(../img/Market_hover.svg) no-repeat center center !important;
-		background-size: contain !important;
-}
-.active .visit{
-	
-	background: url(../img/Visited-Site_hover.svg) no-repeat center center !important;
-	background-size: contain !important;
-}
-
-
 .bx-wrapper .bx-controls-auto .bx-stop {
 	display: block;
 	text-indent: -9999px;
