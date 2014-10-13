@@ -1,6 +1,15 @@
-<script type="text/javascript" src="js/jquery.hover.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.img_wrapper').hover(function(){
+			$(this).stop().animate({marginTop:'100%', opacity:0}, 600);
+		},function(){
+				$(this).stop().animate({marginTop:'0%', opacity:1}, 600);
+		});
+		})
+</script>
 <div class="container clear-fix">
 		<div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -12,6 +21,7 @@
 </div>
 </div><!--
 		--><div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -23,6 +33,7 @@
 </div>
 </div><!--
 		--><div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -34,6 +45,7 @@
 </div>
 </div><!--
 		--><div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -45,6 +57,7 @@
 </div>
 </div><!--
 		--><div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -56,6 +69,7 @@
 </div>
 </div><!--
 		--><div class="thumbnail">
+		<div class="img_wrapper img3"></div>
 <div class="description">
 	<div>
 		<div class="top_left_bort"></div>
@@ -66,5 +80,5 @@
 	</div>
 </div>
 </div>
-		
+
 </div>

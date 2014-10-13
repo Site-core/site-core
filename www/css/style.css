@@ -126,6 +126,8 @@ p, h2, h3 {
 .container {
 	width: 96%;
 	margin: 20px auto 0;
+	border-top: 1px solid #4C4646;
+	border-left: 1px solid #4C4646;  
 }
 
 .description h2 {
@@ -133,7 +135,7 @@ p, h2, h3 {
 	font-size: 18px;
 	color: #4C4646;
 	font-family: 'barkentina';
-	margin-top: 30px;
+	margin-top: 38px;
 }
 .description > div > div:nth-of-type(2) {
 	margin: 10px auto;
@@ -233,6 +235,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', end
 	color: #4C4646;
 }
 
+.img3 {
+	background: url(../img/CN.svg) no-repeat center center;
+}
+
+.img_wrapper {
+	background-color: #eee;
+	z-index: 1;
+	background-size: contain !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
 .left_des {
 	left: 0;
 }
@@ -643,21 +662,16 @@ background: linear-gradient(to right,  rgba(76,70,70,0) 0%,rgba(76,70,70,0.54) 2
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', endColorstr='#004c4646',GradientType=1 );
 
 }
-
 .thumbnail {
+	border-bottom: 1px solid #4C4646;
+	border-right: 1px solid #4C4646;
+	position: relative;
 overflow: hidden;
-width: 31.333333%;
+width: 33.33333%;
 height: 180px;
-margin: 2% 2% 0 0;
-border: 1px solid #999;
-background-color: rgba(255, 255, 255, 0.47);
+background-color: rgba(255, 255, 255, 0.3);
 float:left;
 }
-
-.thumbnail:nth-child(3n) {
-	margin: 2% 0 0 ;
-}
-
 .thumbnail .description {
 width: 100%;
 height: 100%;
@@ -682,15 +696,14 @@ position:relative;
 	font-size: 15px;
 	color: #4C4646;
 	font-family: 'barkentina';
-	margin-top: 6px;
+	margin-top: 10px;
 }
 
 .thumbnail > div > div {
-	background-color:rgba(215, 132, 77, 0.6);
-	top:5px;
-	bottom:5px;
-	left:5px;
-	right:5px;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
 	position:absolute;
 }
 
