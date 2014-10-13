@@ -61,7 +61,7 @@ p, h2, h3 {
 
 .lower2 {
 	bottom: -50px;
-	width: 10%
+	width: 8%
 }
 
 .cirkle svg {
@@ -325,7 +325,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4646', end
 .more_scroll {
 	display: block;
 	position: relative;
-	height: 70px;
+	height: 47px;
 	float: left;
 	width: 100%;
 	margin-top: 24px;
@@ -377,7 +377,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 .more_scroll h2 {
 	color: #4C4646;
 	vertical-align: middle;
-	line-height: 48px;
+	line-height: 25px;
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
