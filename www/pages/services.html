@@ -55,7 +55,7 @@
 	<input required="required" type="text" id="f1" name="you-name" >
 	<label for="f2">Ваш email или телефон</label>
 	<input required="required" type="text" id="f2" name="you-email-or-phone" >
-	<div id="blocks">
+	<div id="blocks" class="mini">
 	<p>Блоки</p>
 		<check></check>
 	</div>
@@ -65,17 +65,7 @@
 </form>
 
 <script type="text/javascript">
-			$(function(){
-		$('#blocks').onclick(function(){
-			$(this).stop().animate({height:'200px'}, 600);
-			,(function(){
-			$(this).stop().animate({height:'40px'}, 600);
-		});
-			});
-	});
-</script>
 
-<script>
 	$(document).ready(function(){
 		slider = $('.slider_window').bxSlider({
 			mode:'fade',
@@ -97,5 +87,14 @@
 			 default:
 				window.location.hash='visit';
 		}
+
+		$('#blocks').click(function(){
+			 if($(this).hasClass('mini')) {
+					$(this).animate({height:200},200).removeClass('mini');
+				  } else { 
+					$(this).animate({height:40},200).addClass('mini');
+				  }
+		});
+
 	});
 </script>
