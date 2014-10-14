@@ -49,24 +49,32 @@
 	</div>
 </div>
 
-<a class="more_scroll" href="#">
-	<h2>Еще больше вариантов</h2>
-	<div class="cirkle lower2" href="#">
-		<svg viewBox="0 0 100 50">
-					<use xlink:href="/img/Arow.svg#Arow" ></use>
-					</svg>
+<form class="form-post " action="" method="post" name="other-site">
+<div class="clear-fix">
+	<label for="f1">Ваше имя</label>
+	<input required="required" type="text" id="f1" name="you-name" >
+	<label for="f2">Ваш email или телефон</label>
+	<input required="required" type="text" id="f2" name="you-email-or-phone" >
+	<div id="blocks">
+	<p>Блоки</p>
+		<check></check>
 	</div>
-</a>
+	<input class="site-description" required="required" type="text" name="you-site">
+	<input class="form-button" type="submit" name="submit-form" placeholder="Отправить">
+	</div>
+</form>
 
-<div class="service_description clear-fix">
-	<div class="service_descript_icon"></div>
-</div>
+<script type="text/javascript">
+			$(function(){
+		$('#blocks').onclick(function(){
+			$(this).stop().animate({height:'200px'}, 600);
+			,(function(){
+			$(this).stop().animate({height:'40px'}, 600);
+		});
+			});
+	});
+</script>
 
-<div class="service_description clear-fix">
-
-</div>
-
-<div class="service_description clear-fix"></div>
 <script>
 	$(document).ready(function(){
 		slider = $('.slider_window').bxSlider({

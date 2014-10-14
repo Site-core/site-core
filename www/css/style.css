@@ -16,6 +16,62 @@ p, h2, h3 {
 	font-family: 'barkentina';
 }
 
+.form-post	{
+	margin: 44px auto 0;
+	width: 80%;
+	border: 1px solid #4C4646;
+}
+
+.form-post > div {
+	width: 60%;
+	margin:  20px auto;
+}
+
+.form-post > div > div {
+	float: left;
+	width: 100%;
+	height: 40px;
+	background-color: #d7844d;
+}
+
+.form-post > div > div:hover {
+	cursor: pointer;
+}
+
+.form-post > div > div  p {
+	text-align: center;
+}
+
+
+.form-post input {
+	width: 100%;
+	height: 40px;
+	margin: 6px auto;
+	text-align: center;
+	float: left;
+}
+.form-post label {
+	display: none;
+	width: 100%;
+	line-height: 25px;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+}
+.form-button {
+	width: 30%;
+}
+.form-post select {
+	width: 100%;
+	margin: 6px auto;
+	text-align: center;
+	float: left;
+}
+
+.site-description {
+	min-height: 200px;
+}
+
 .bg_main {
 	height: 615px;
 	background: url(/img/bg1.png) no-repeat center center ;
