@@ -62,13 +62,19 @@ p, h2, h3 {
 	width: 30%;
 }
 .form-post select {
+
 	width: 100%;
 	margin: 6px auto;
 	text-align: center;
 	float: left;
 }
 
-.site-description {
+textarea {
+	resize: none;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
 	min-height: 200px;
 }
 
