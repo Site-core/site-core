@@ -55,8 +55,14 @@
 	<input required="required" type="text" id="f1" name="you-name" >
 	<label for="f2">Ваш email или телефон</label>
 	<input required="required" type="text" id="f2" name="you-email-or-phone" >
-	<div id="blocks" class="mini">
-	<p>Блоки</p>
+	<style>
+	.blocks_list{height:160px;display:none}
+	</style>
+	<div id="blocks"><p>Блоки</p></div>
+	<div class="blocks_list">	
+		Блок1
+		Блок2
+		Блок3
 		<check></check>
 	</div>
 	<textarea resize="none"></textarea>
@@ -87,15 +93,8 @@
 			 default:
 				window.location.hash='visit';
 		};
-
-		var $originHeight;
 		$('#blocks').click(function(){
-			if($(this).hasClass('mini')) {
-			$originHeight = $(this).height();
-			$(this).animate({height:200},200).removeClass('mini');
-			} else {
-			$(this).animate({height:$originHeight},200).addClass('mini');
-			}
+			$('.blocks_list').slideToggle(200);
 		});
 
 	});
