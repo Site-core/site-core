@@ -76,9 +76,7 @@ textarea {
 	resize: none;
 	overflow: hidden;
 	width: 100%;
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 200px;
+	min-height: 100px;
 }
 
 .bg_main {
