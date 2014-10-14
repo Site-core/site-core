@@ -86,14 +86,16 @@
 				break;
 			 default:
 				window.location.hash='visit';
-		}
+		};
 
+		var $originHeight;
 		$('#blocks').click(function(){
-			 if($(this).hasClass('mini')) {
-					$(this).animate({height:200},200).removeClass('mini');
-				  } else { 
-					$(this).animate({height:40},200).addClass('mini');
-				  }
+			if($(this).hasClass('mini')) {
+			$originHeight = $(this).height();
+			$(this).animate({height:200},200).removeClass('mini');
+			} else {
+			$(this).animate({height:$originHeight},200).addClass('mini');
+			}
 		});
 
 	});
