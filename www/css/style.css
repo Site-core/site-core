@@ -19,7 +19,6 @@ p, h2, h3 {
 .form-post	{
 	margin: 44px auto 0;
 	width: 80%;
-	border: 1px solid #4C4646;
 }
 
 .form-post > div {
@@ -27,14 +26,14 @@ p, h2, h3 {
 	margin:  20px auto;
 }
 
-.form-post > div > div {
+#blocks {
 	float: left;
 	width: 100%;
-	height: 40px;
+	line-height: 40px;
 	background-color: #d7844d;
 }
 
-.form-post > div > div:hover {
+#blocks:hover {
 	cursor: pointer;
 }
 
@@ -43,14 +42,15 @@ p, h2, h3 {
 }
 
 
-.form-post input {
+.form-post > div > input {
+	font-family: 'barkentina';
 	width: 100%;
 	height: 40px;
 	margin: 6px auto;
 	text-align: center;
 	float: left;
 }
-.form-post label {
+.form-post > div > label {
 	display: none;
 	width: 100%;
 	line-height: 25px;
@@ -58,17 +58,31 @@ p, h2, h3 {
 	text-align: center;
 	float: left;
 }
-.form-button {
-	width: 30%;
-}
-.form-post select {
 
-	width: 100%;
-	margin: 6px auto;
+.blocks_list input {
+	display: none;
+}
+
+.blocks_list label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	border-radius: 10px;
+	font-family: 'barkentina';
+	line-height: 40px;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #C58154;
 	text-align: center;
+	width: 30%;
+	margin: 1.66666666%;
 	float: left;
-}
+} 
 
+.blocks_list input:checked + label{
+	background-color: #CC7942;
+}
 textarea {
 	font-family: 'barkentina';
 	font-size: 16px;
@@ -76,8 +90,24 @@ textarea {
 	resize: none;
 	overflow: hidden;
 	width: 100%;
+	margin: 6px auto;
 	min-height: 100px;
 }
+#form-button {
+
+	padding: 8px 2px;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	font-family: 'barkentina';
+}
+
+.form-button {
+	width: 30% !important;
+	margin: 0 auto !important;
+	clear: both !important;
+}
+
 
 .bg_main {
 	height: 615px;
@@ -98,6 +128,15 @@ textarea {
 	right: 5px;
 	border-right: 1px solid #4C4646;
 	border-bottom: 1px solid #4C4646;
+}
+
+.blocks_list{
+	float: left;
+	width: 100%;
+	padding: 10px;
+	background-color: #D6966B;
+	cursor: default !important;
+	display:none;
 }
 
 .cirkle {

@@ -52,21 +52,45 @@
 <form class="form-post " action="" method="post" name="other-site">
 <div class="clear-fix">
 	<label for="f1">Ваше имя</label>
-	<input required="required" type="text" id="f1" name="you-name" >
-	<label for="f2">Ваш email или телефон</label>
-	<input required="required" type="text" id="f2" name="you-email-or-phone" >
-	<style>
-	.blocks_list{height:160px;display:none}
-	</style>
-	<div id="blocks"><p>Блоки</p></div>
-	<div class="blocks_list">	
-		Блок1
-		Блок2
-		Блок3
-		<check></check>
+	<input required="required" type="text" id="f1" name="you-name"  placeholder="Ваше имя">
+	<label for="f2">Ваш e-mail или телефон</label>
+	<input required="required" type="text" id="f2" name="you-email-or-phone" placeholder="Ваш e-mail или телефон">
+	
+	<div id="blocks"><p>Основные модули</p></div>
+	<div class="blocks_list clear-fix">	
+
+		<input id="check-1" name="check-1" type="checkbox" атрибуты>
+		<label for="check-1">Кнопка</label>
+		
+		<input id="check-2" name="check-2" type="checkbox" атрибуты>
+		<label for="check-2">Кнопка</label>
+		
+		<input id="check-3" name="check-3" type="checkbox" атрибуты>
+		<label for="check-3">Кнопка</label>
+		
+		<input id="check-4" name="check-4" type="checkbox" атрибуты>
+		<label for="check-4">Кнопка</label>
+		
+		<input id="check-5" name="check-5" type="checkbox" атрибуты>
+		<label for="check-5">Кнопка</label>
+		
+		<input id="check-6" name="check-6" type="checkbox" атрибуты>
+		<label for="check-6">Кнопка</label>
+		
+		<input id="check-7" name="check-7" type="checkbox" атрибуты>
+		<label for="check-7">Кнопка</label>
+		
+		<input id="check-8" name="check-8" type="checkbox" атрибуты>
+		<label for="check-8">Кнопка</label>
+		
+		<input id="check-9" name="check-9" type="checkbox" атрибуты>
+		<label for="check-9">Кнопка</label>
+		
+
 	</div>
-	<textarea resize="none"></textarea>
-	<input class="form-button" type="submit" name="submit-form" placeholder="Отправить">
+
+	<textarea resize="none" placeholder="Ваши пожелания..."></textarea>
+	<div class="form-button"><input id="form-button" type="submit" name="submit-form" placeholder="Отправить"></div>
 	</div>
 </form>
 
@@ -94,7 +118,7 @@
 				window.location.hash='visit';
 		};
 		$('#blocks').click(function(){
-			$('.blocks_list').slideToggle(200);
+			$('.blocks_list').slideToggle(300);
 		});
 
 	});
