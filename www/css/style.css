@@ -31,6 +31,7 @@ p, h2, h3 {
 	width: 100%;
 	line-height: 40px;
 	background-color: #d7844d;
+	margin: 8px auto 0;
 }
 
 #blocks:hover {
@@ -41,12 +42,12 @@ p, h2, h3 {
 	text-align: center;
 }
 
-
 .form-post > div > input {
+	color: #333;
 	font-family: 'barkentina';
 	width: 100%;
 	height: 40px;
-	margin: 6px auto;
+	margin: 8px auto 0;
 	text-align: center;
 	float: left;
 }
@@ -90,11 +91,10 @@ textarea {
 	resize: none;
 	overflow: hidden;
 	width: 100%;
-	margin: 6px auto;
+	margin: 8px auto 0;
 	min-height: 100px;
 }
 #form-button {
-
 	padding: 8px 2px;
 	width: 100%;
 	line-height: 40px;
@@ -104,7 +104,7 @@ textarea {
 
 .form-button {
 	width: 30% !important;
-	margin: 0 auto !important;
+	margin: 5px auto 0 !important;
 	clear: both !important;
 }
 
