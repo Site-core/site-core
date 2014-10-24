@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 44px;
+	margin: 0 auto 64px;
 	padding: 0;
 	*zoom: 1;
 }
@@ -210,4 +210,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+.bx-viewport {
+	height: 186px !important;
 }

@@ -27,11 +27,19 @@ p, h2, h3 {
 }
 
 #blocks {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 	float: left;
 	width: 100%;
 	line-height: 40px;
-	background-color: #d7844d;
+	background-color: #E79965;
 	margin: 8px auto 0;
+}
+
+#blocks p {
+	color: #201E1E;
 }
 
 #blocks:hover {
@@ -74,15 +82,21 @@ p, h2, h3 {
 	line-height: 40px;
 	cursor: pointer;
 	display: inline-block;
-	background-color: #C58154;
+	background-color: #CC926B;
 	text-align: center;
 	width: 30%;
 	margin: 1.66666666%;
 	float: left;
+	-webkit-box-shadow: 0px 4px 2px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow: 0px 4px 2px 0px rgba(50, 50, 50, 0.35);
+	box-shadow: 0px 4px 2px 0px rgba(50, 50, 50, 0.35);
 } 
 
 .blocks_list input:checked + label{
-	background-color: #CC7942;
+	-webkit-box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	background-color: #D68B59;
 }
 textarea {
 	font-family: 'barkentina';
@@ -131,12 +145,14 @@ textarea {
 }
 
 .blocks_list{
+	border-radius: 10px;
 	float: left;
-	width: 100%;
+	width: 120%;
 	padding: 10px;
-	background-color: #D6966B;
+	background-color: #E4AF8A;
 	cursor: default !important;
 	display:none;
+	margin: 0 0 0 -10%;
 }
 
 .cirkle {
@@ -227,7 +243,7 @@ textarea {
 
 .container {
 	width: 96%;
-	margin: 20px auto 0;
+	margin: 60px auto 0;
 	border-top: 1px solid #4C4646;
 	border-left: 1px solid #4C4646;  
 }
@@ -443,6 +459,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4646', end
   vertical-align: middle;
 }
 
+.more_button {
+	font-family: 'barkentina';
+	color: #4B4040;
+	border:none;
+	cursor: pointer;
+	background: #fff;
+	z-index: 9999;
+	position: absolute;
+	width: 160px;
+	line-height: 34px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 172px;
+	border-radius: 3px;
+	margin: auto;
+	border: 1px solid rgba(76, 70, 70, 0.7);
+	-webkit-transition: all .5s ease 0;
+	-moz-transition: all .5s ease 0;
+	-o-transition: all .5s ease 0;
+	transition: all .5s ease 0;
+}
+
+.more_button:hover {
+	-webkit-box-shadow: 0px 5px 4px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px 5px 4px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px 5px 4px 0px rgba(50, 50, 50, 0.25);
+	background: #F0B085;
+	-webkit-transition: all .5s ease 0;
+	-moz-transition: all .5s ease 0;
+	-o-transition: all .5s ease 0;
+	transition: all .5s ease 0;
+}
+
+.more_button:active {
+	-webkit-box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: inset 0px 4px 2px 0px rgba(50, 50, 50, 0.25);
+	-webkit-transition: all .5s ease 0;
+	-moz-transition: all .5s ease 0;
+	-o-transition: all .5s ease 0;
+	transition: all .5s ease 0;
+}
+
 .more_scroll {
 	display: block;
 	position: relative;
@@ -532,14 +592,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 	color: #d7844d;
 	font-size: 19px;
 	font-family: 'barkentina';
+	-webkit-transition: all .5s ease 0;
+	-moz-transition: all .5s ease 0;
+	-o-transition: all .5s ease 0;
+	transition: all .5s ease 0;
 
 
 }
 
 .nav li a:hover {
 	color: #fff;
-	background-color:  #d7844d;
-	transition: all 0.6s ease 0s;
+	background-color:  #F4A672;
+	-webkit-transition: all .5s ease 0;
+	-moz-transition: all .5s ease 0;
+	-o-transition: all .5s ease 0;
+	transition: all .5s ease 0;
 }
 
 .portfolio_block li {
@@ -651,6 +718,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .slider{
+	position: relative;
 	width: 100%;
 	margin: 0 auto;
 	margin: 50px auto 18px;
@@ -820,9 +888,41 @@ position:relative;
 	border-left: 1px solid #4C4646;
 }
 
+.comp {
+	width: 700px;
+	height: 300px;
+}
+
+.comp svg use {
+	width: 300px;
+	height: 300px;
+}
 .wrapper {
 	margin: 0 auto;
 	width: 1000px;
 	border: 1px solid transparent;
 	min-height: 100%;
+}
+
+#IPadHor  {
+
+}
+
+.st0{
+	fill:#B2B2B2;
+}
+.st1{fill:#8AC8D2;}
+.st2{fill:#979898;}
+.st3{fill:#FDFDFE;}
+.st4{fill:#FFFFFF;}
+.st5{fill:#353535;}
+.st6{fill:#D25243;}
+
+.page {
+	display: block;
+	float: left;
+	border: 1px solid #333;
+	width: 100px;
+	height: 100px;
+	margin-left: 30px;
 }
