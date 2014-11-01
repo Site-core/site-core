@@ -76,7 +76,7 @@
 
 <script>
 $( ".spoiler-link" ).click(function() {
-if($('.spoiler-body:visible', this).length){
+if($('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','');		
 } else {
 	$('h2', this).css('color','#d7844d');
