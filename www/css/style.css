@@ -12,8 +12,9 @@ body {
 	box-sizing:border-box;
 }
 
-p, h2, h3 {
+p,a,h1,h2, h3 {
 	font-family: 'barkentina';
+	color: #4C4646;
 }
 
 .form-post	{
@@ -167,10 +168,47 @@ textarea {
 	background: url(/img/hexellence.png) center center;
 }
 
+.no-svg .cirkle {
+	display: none;
+}
 
+.spoiler-body {
+	display: none;
+	padding: 8px;
+}
+
+.spoiler-body p {
+	padding-left: 60px;
+}
+
+.spoiler-link {
+	cursor: pointer;
+	
+}
+
+.spoiler-link > h2 {
+	padding: 8px 8px 8px 60px;
+	background: url(../img/instagram.png) no-repeat left center;
+	background-size: contain;
+	font-size: 1.1em;
+	color: 
+}
 
 .cirkle svg {
 	fill: #d7844d;
+}
+
+.shop-ul li {
+	width: 80%;
+	margin: 8px auto;
+
+}
+ 
+.headline {
+	width: 100%;
+	margin: 50px auto;
+	font-size: 1.2em;
+	text-align: center;
 }
 
 .lower {
@@ -216,7 +254,6 @@ textarea {
 	text-align: center;
 	font-family: 'barkentina';
 	font-size: 22px;
-	color: #4C4646;
 }
 
 .contacts li {
@@ -229,7 +266,6 @@ textarea {
 	text-align: center;
 	font-family: 'barkentina';
 	font-size: 20px;
-	color: #4C4646;
 }
 
 .contacts li a {
@@ -238,7 +274,6 @@ textarea {
 	text-align: center;
 	font-family: 'barkentina';
 	font-size: 20px;
-	color: #4C4646;
 }
 
 .container {
@@ -251,7 +286,6 @@ textarea {
 .description h2 {
 	text-align: center;
 	font-size: 18px;
-	color: #4C4646;
 	font-family: 'barkentina';
 	margin-top: 38px;
 }
@@ -279,7 +313,6 @@ textarea {
 	text-align: center;
 	display: block;
 	margin: 8px auto;
-	color: #4C4646;
 	font-size: 16px;
 	font-family: 'barkentina';
 }
@@ -350,7 +383,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', end
 	text-align: center;
 	font-family: 'barkentina';
 	font-size: 22px;
-	color: #4C4646;
 }
 
 .img3 {
@@ -556,7 +588,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .more_scroll h2 {
-	color: #4C4646;
 	vertical-align: middle;
 	line-height: 25px;
 	text-align: center;
@@ -657,7 +688,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 .portfolio_block li div h2 {
 	text-align: center;
 	font-size: 18px;
-	color: #4C4646;
 	font-family: 'barkentina';
 	margin-top: 30px;
 }
@@ -665,7 +695,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 .portfolio_block li div p {
 	text-align: center;
 	font-size: 15px;
-	color: #4C4646;
 	font-family: 'barkentina';
 	margin-top: 6px;
 }
@@ -741,7 +770,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .slide > div p {
-	color: #4C4646;
 	width: 80%;
 	margin: 0 auto 16px;
 	font-size: 16px;
@@ -789,7 +817,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .slider_control > a > div p {
-	color: #4C4646;
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
@@ -864,7 +891,6 @@ position:relative;
 .thumbnail p {
 	text-align: center;
 	font-size: 15px;
-	color: #4C4646;
 	font-family: 'barkentina';
 	margin-top: 10px;
 }
@@ -917,6 +943,16 @@ position:relative;
 .st4{fill:#FFFFFF;}
 .st5{fill:#353535;}
 .st6{fill:#D25243;}
+
+#svgfre {
+	opacity: 0.7;
+}
+
+#svgfre:hover { 
+	fill:#D25243 !important;
+}
+
+
 
 .page {
 	display: block;
