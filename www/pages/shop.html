@@ -76,8 +76,14 @@
 </div>
 
 <script>
-$('.spoiler-link').click(function(){
-$(this).children("h2").css('color','#888');
-$(this).children('.spoiler-body').toggle(300);
+
+$( ".spoiler-link" ).click(function() {
+if($('.spoiler-body:visible', this).length){
+	$('.spoiler-body', this).stop().slideToggle(300);
+	$(this).children("h2").css('color','');		
+} else {
+	$('.spoiler-body', this).stop().slideToggle(300);
+	$(this).children("h2").css('color','#d7844d');
+}
 });
 </script>
