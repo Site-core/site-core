@@ -504,7 +504,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4646', end
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 172px;
+	top: 167px;
 	border-radius: 3px;
 	margin: auto;
 	border: 1px solid rgba(76, 70, 70, 0.7);
@@ -751,6 +751,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 	width: 100%;
 	margin: 0 auto;
 	margin: 50px auto 18px;
+	overflow:hidden;
 }
 .slider_wrapper {
 	margin: 0 auto;
@@ -828,7 +829,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4646', e
 }
 
 .bx-wrapper:after {
-	opacity: 0.7;
+
 	display: block;
 	content: "";
 	height: 1px;
