@@ -186,24 +186,52 @@ textarea {
 	
 }
 
-.admin-control {
+.easy-icon {
+	background: url(../img/icons/pad_icon.svg) no-repeat center left;
+}
+
+
+.admin-icon {
 	background: url(../img/icons/gears_icon.svg) no-repeat center left;
 }
 
-.ittem-control {
+.ittem-icon {
 	background: url(../img/icons/market_icon.svg) no-repeat center left;
 }
 
-.personal {
+.personal-icon {
 	background: url(../img/icons/list_icon.svg) no-repeat center left;
 }
 
-.soc-control {
+.soc-icon {
 	background: url(../img/icons/soc_icon.svg) no-repeat center left;
 }
 
+.delivery-icon {
+	background: url(../img/icons/delivery_icon.svg) no-repeat center left;
+}
+
+.payment-icon {
+	background: url(../img/icons/payment_icon.svg) no-repeat center left;
+}
+
+.news-icon {
+	background: url(../img/icons/news_icon.svg) no-repeat center left;
+}
+
+.mail-icon {
+	background: url(../img/icons/mail_icon.svg) no-repeat center left;
+}
+
+.cms-icon {
+	background: url(../img/icons/cms_icon.svg) no-repeat center left;
+}
+
+.personal-settings-icon {
+	background: url(../img/icons/personal_settings_icon.svg) no-repeat center left;
+}
 .spoiler-link > h2 {
-	padding: 11px 8px 11px 60px;
+	padding: 14px 8px 14px 60px;
 	background-size: contain;
 	font-size: 1.1em;
 	color: 
