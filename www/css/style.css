@@ -980,10 +980,6 @@ position:relative;
 	min-height: 100%;
 }
 
-#IPadHor  {
-
-}
-
 .st0{
 	fill:#B2B2B2;
 }
@@ -998,6 +994,7 @@ position:relative;
 	opacity: 0.7;
 }
 
+
 #svgfre:hover { 
 	fill:#D25243 !important;
 }
@@ -1011,4 +1008,28 @@ position:relative;
 	width: 100px;
 	height: 100px;
 	margin-left: 30px;
+}
+
+.side_arrow_left {
+	left: 20px;
+	background: url(../img/arrow_left.svg) no-repeat center center;
+	text-align: right;
+}
+
+.side_arrow_right {
+	right: 20px;
+	background: url(../img/arrow_right.svg) no-repeat center center;
+	text-align: left;
+}
+
+.side_arrow {
+	padding-top: 13px;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	width: 150px;
+	height: 50px;
+	vertical-align: middle;
+	background-size: contain;
 }

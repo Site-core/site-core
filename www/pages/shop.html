@@ -1,3 +1,5 @@
+<a href="#" class="side_arrow side_arrow_left">Сайт-визитка</a>
+<a href="#" class="side_arrow side_arrow_right">Сайт-визитка</a>
 <h2 class="headline">Интернет магазин</h2>
 <ul class="shop-ul">
 <h2 class="headline">Преимущества интернет магазина</h2>
@@ -82,5 +84,10 @@ if($('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
 }
 $('.spoiler-body', this).stop().slideToggle(300);
+});
+
+$('.side_arrow').hover(function(){
+	$('#shadow').css("opacity","0.2"),
+	$('#shadow').css("opacity","0");
 });
 </script>
