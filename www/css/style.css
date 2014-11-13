@@ -425,9 +425,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7844d', end
 	font-size: 22px;
 }
 
-.img3 {
+.portfolio_bg_1 {
+	background: url(../img/Xbox_world.svg) no-repeat center center;
+}
+
+.portfolio_bg_2 {
 	background: url(../img/CN.svg) no-repeat center center;
 }
+
+.portfolio_bg_3 {
+	background: url(../img/Xbox_world_social.svg) no-repeat center center;
+}
+
 
 .img_wrapper {
 	background-color: #eee;
