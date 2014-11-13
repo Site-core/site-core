@@ -19,7 +19,7 @@ p,a,h1,h2, h3 {
 
 .form-post	{
 	margin: 44px auto 0;
-	width: 80%;
+	width: 100%;
 }
 
 .form-post > div {
@@ -146,14 +146,12 @@ textarea {
 }
 
 .blocks_list{
-	border-radius: 10px;
 	float: left;
-	width: 120%;
+	width: 100%;
 	padding: 10px;
 	background-color: #E4AF8A;
 	cursor: default !important;
 	display:none;
-	margin: 0 0 0 -10%;
 }
 
 .cirkle {
@@ -230,6 +228,7 @@ textarea {
 .personal-settings-icon {
 	background: url(../img/icons/personal_settings_icon.svg) no-repeat center left;
 }
+
 .spoiler-link > h2 {
 	padding: 14px 8px 14px 60px;
 	background-size: contain;
