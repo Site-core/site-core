@@ -1033,3 +1033,14 @@ position:relative;
 	vertical-align: middle;
 	background-size: contain;
 }
+
+.icon{
+  width:32px;
+  height:32px;
+  cursor:pointer;
+  fill: #ccc;
+}
+
+.arrow_left_icon rect{
+	clip-path:url('#arrow_left_icon');
+}
