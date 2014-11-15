@@ -3,13 +3,15 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 50" style="enable-background:new 0 0 150 50;" xml:space="preserve">
-	 <?xml-stylesheet type="text/css" href="/css/style.css"?>
-<defs>
-	<symbol id="arrow_left">
-		<path id="shadow" class="st6" d="M0.8,30.2c0.4,0.2,0.4,0.2,0.5,0.2l23.3,17.8c0.9,0.8,2.1,1,3.1,0.4l11.6-6.8c4.2-2.5,9.1-3.8,14-3.8H150v1
+<style type="text/css">
+	.st0{fill:#D08453;}
+	.st1{fill:none;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:16;}
+</style>
+<path class="st0" d="M0.8,30.2c0.4,0.2,0.4,0.2,0.5,0.2l23.3,17.8c0.9,0.8,2.1,1,3.1,0.4l11.6-6.8c4.2-2.5,9.1-3.8,14-3.8H150v1
 	H53.2c-4.7,0-9.3,1.2-13.3,3.6l-11.7,6.8C27.6,49.8,27,50,26.4,50c-0.9,0-1.8-0.3-2.5-1L0.4,31.1C0.2,30.9,0,30.7,0,30.4
 	c0-0.1,0-0.2,0-0.2H0.8z"/>
-	</symbol>
-</defs>
-
+<rect x="22.5" y="20" class="st1" width="127.5" height="17.8"/>
+<text transform="matrix(1 0 0 1 41.0508 31.36)" class="st2 st3">Сайт визитка</text>
 </svg>

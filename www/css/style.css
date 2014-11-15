@@ -1012,13 +1012,11 @@ position:relative;
 
 .side_arrow_left {
 	left: 20px;
-	background: url(../img/arrow_left.svg) no-repeat center center;
 	text-align: right;
 }
 
 .side_arrow_right {
 	right: 20px;
-	background: url(../img/arrow_right.svg) no-repeat center center;
 	text-align: left;
 }
 

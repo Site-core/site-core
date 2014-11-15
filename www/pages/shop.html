@@ -1,12 +1,14 @@
 
 <a href="#" class="side_arrow side_arrow_left">
-
-<svg class="arrow_left_icon icon" viewBox="0 0 150 50">
-      <rect width="150" height="50" />
- </svg>
-
+<svg viewBox="0 0 150 50">
+<use id="svg_arrow" xlink:href="/img/arrow_right.svg#arrow_left" ></use>
+</svg>
 </a>
-<a href="#" class="side_arrow side_arrow_right">Сайт-визитка</a>
+<a href="#" class="side_arrow side_arrow_right">
+<svg viewBox="0 0 150 50">
+<use id="svg_arrow" xlink:href="/img/arrow_right.svg#arrow_right" ></use>
+</svg>
+</a>
 <h2 class="headline">Интернет магазин</h2>
 <ul class="shop-ul">
 <h2 class="headline">Преимущества интернет магазина</h2>
@@ -82,7 +84,6 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
-<embed id="svg" type="image/svg+xml" src="/img/arrow_right.svg" height="200" width="200">
 <script>
 $( ".spoiler-link" ).click(function() {
 if($('.spoiler-body', this).is(":visible")){
@@ -93,9 +94,8 @@ if($('.spoiler-body', this).is(":visible")){
 $('.spoiler-body', this).stop().slideToggle(300);
 });
 $(document).ready(function(){
-var SVG = document.getElementById("svg");	
-//var SVG = document.getElementById("svg").getSVGDocument();
-//var svgEl = SVG.getElementById('shadow');
+var SVG = document.getElementById("svg_arrow");	
+var svgEl = SVG.getElementById('shadow');
 	$( ".side_arrow" ).hover(
   function() {
     $(SVG).css("opacity","0.2");
