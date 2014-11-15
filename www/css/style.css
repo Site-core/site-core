@@ -160,9 +160,9 @@ textarea {
 	margin: auto;
 	left: 0;
 	right: 0;
-	bottom: -45px;
+	bottom: -49px;
 	width: 34.343434%;
-	height: 51px;
+	height: 50px;
 	background: url(/img/hexellence.png) center center;
 }
 
@@ -181,52 +181,7 @@ textarea {
 
 .spoiler-link {
 	cursor: pointer;
-	
-}
-
-.easy-icon {
-	background: url(../img/icons/pad_icon.svg) no-repeat center left;
-}
-
-
-.admin-icon {
-	background: url(../img/icons/gears_icon.svg) no-repeat center left;
-}
-
-.ittem-icon {
-	background: url(../img/icons/market_icon.svg) no-repeat center left;
-}
-
-.personal-icon {
-	background: url(../img/icons/list_icon.svg) no-repeat center left;
-}
-
-.soc-icon {
-	background: url(../img/icons/soc_icon.svg) no-repeat center left;
-}
-
-.delivery-icon {
-	background: url(../img/icons/delivery_icon.svg) no-repeat center left;
-}
-
-.payment-icon {
-	background: url(../img/icons/payment_icon.svg) no-repeat center left;
-}
-
-.news-icon {
-	background: url(../img/icons/news_icon.svg) no-repeat center left;
-}
-
-.mail-icon {
-	background: url(../img/icons/mail_icon.svg) no-repeat center left;
-}
-
-.cms-icon {
-	background: url(../img/icons/cms_icon.svg) no-repeat center left;
-}
-
-.personal-settings-icon {
-	background: url(../img/icons/personal_settings_icon.svg) no-repeat center left;
+	position: relative;
 }
 
 .spoiler-link > h2 {
@@ -251,15 +206,6 @@ textarea {
 	text-align: center;
 }
 
-.lower {
-	bottom: -51px;
-}
-
-.lower2 {
-	bottom: -50px;
-	width: 8%
-}
-
 .cirkle svg {
 	 fill: #4C4646;
 }
@@ -267,9 +213,6 @@ textarea {
 .active .cirkle svg {
   fill: #d7844d;
 }
-
-.style0 {fill: rgba(76, 70, 70, 0.72)}
-
 
 .cirkle > div {
 	margin-top: -5px;
@@ -988,12 +931,20 @@ position:relative;
 .st3{fill:#FDFDFE;}
 .st4{fill:#FFFFFF;}
 .st5{fill:#353535;}
-.st6{fill:#D25243;}
+.svg_light_broun_stroke {
+	fill:none;
+	stroke:#4C4646;
+	stroke-miterlimit:10;
+}
+.svg_light_broun{fill:#4C4646;}
+.svg_orange_color {fill:#d7844d;}
+.svg_light_grey {fill: rgba(76, 70, 70, 0.72)}
 
 #svgfre {
 	opacity: 0.7;
 }
 
+.portfolio_section_bg {fill:#EDEFED;}
 
 #svgfre:hover { 
 	fill:#D25243 !important;
@@ -1041,4 +992,14 @@ position:relative;
 
 .arrow_left_icon rect{
 	clip-path:url('#arrow_left_icon');
+}
+
+.description_icons {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	width: 50px;
+	height: 50px;
 }
