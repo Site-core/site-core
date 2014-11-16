@@ -152,10 +152,24 @@ var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, m
 console.log(s);
 
 // Создать фигуру
-var s3 = Snap();
+
+var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg_tag.setAttribute("viewBox","0 0 500 300");
+var s3 = Snap(svg_tag);
 var circle;
-$('.svg_test').append(s3);
 s3.circle(150, 150, 100);
+$('#svg3').append(svg_tag);
+
+//var svgEl = SVG.getElementById('shadow');
+	$('#svg2').hover(
+  function() {
+	console.log($('#Pad_icon > .svg_light_broun'));
+	$('#Pad_icon .svg_light_broun').css('fill','blue');
+  }, function() {
+    //$(svg_style).remove();
+  }
+);
+
 });
 </script>
 
