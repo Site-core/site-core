@@ -3,25 +3,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="50 0 50 50" style="enable-background:new 50 0 50 50;" xml:space="preserve">
-<?xml-stylesheet type="text/css" href="../css/style.css"?>
-<style>
-.svg_light_broun_stroke {
-	fill:none;
-	stroke:#4C4646;
-	stroke-miterlimit:10;
-}
-.svg_light_broun{fill:#4C4646;}
-</style>
+<?xml-stylesheet type="text/css" href="/css/style.css"?>
 <defs>
-
-	<symbol id="Cms_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+	<symbol id="Cms_icon" viewBox="50 0 50 50">
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M75,13.5c-6.3,0-11.5,5.2-11.5,11.5S68.7,36.5,75,36.5S86.5,31.3,86.5,25S81.3,13.5,75,13.5z M80.8,26.2h-4.6
 		v4.6h-2.3v-4.6h-4.6v-2.3h4.6v-4.6h2.3v4.6h4.6V26.2z"/>
 </symbol>
 
-<symbol id="Card_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+<symbol id="Card_icon" viewBox="50 0 50 50" >
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 <path id="test_path" class="svg_light_broun" d="M87.4,13.5c-0.1-0.4-0.5-0.7-0.9-0.5l-3,0.8c-0.3,0.1-0.5,0.3-0.6,0.6l-0.4,2.4L63.9,19l0,0c0,0,0,0-0.1,0
 	c0,0-0.1,0-0.1,0.1c0,0-0.1,0-0.1,0.1c-0.1,0-0.1,0.1-0.1,0.1s0,0-0.1,0.1l0,0c-0.1,0-0.1,0-0.1,0.1c0,0,0,0,0,0.1s0,0.2,0,0.3
 	l2.2,9.1l0.8,3c0,0,0,0,0,0.1v0.1l0.1,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1h0.1c0.1,0,0.2,0.1,0.3,0.1h15.9c0.4,0,0.8-0.3,0.8-0.8
@@ -32,8 +23,8 @@
 	s0.7,1.5,1.5,1.5c0.8,0,1.5-0.7,1.5-1.5C81.4,34.7,80.7,34.1,79.8,34.1z"/>
 	</symbol>
 
-	<symbol id="Delivery_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-<ellipse   class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+	<symbol id="Delivery_icon" viewBox="50 0 50 50" >
+<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 <path class="svg_light_broun" d="M86.1,17.2l-2.8-3.5c-0.3-0.3-0.7-0.5-1.1-0.5H67.8c-0.4,0-0.8,0.2-1.1,0.5l-2.8,3.5c-0.3,0.4-0.5,1-0.5,1.6
 	v2.6c0.2-0.3,0.5-0.6,0.9-0.7c0-0.3,0.1-0.6,0.3-0.8c0.3-0.4,0.7-0.8,1.2-0.9c0.2,0,0.3-0.1,0.5-0.1c0.7,0,1.3,0.3,1.6,0.9
 	c0.1,0,0.2,0,0.3,0c0.3,0,0.6,0.1,0.9,0.2l1.5-0.4c0.2-0.1,0.4-0.1,0.6-0.1c1.1,0,2,0.7,2.3,1.8l3,11.6c0.2,0.6,0.1,1.2-0.2,1.8
@@ -52,8 +43,8 @@
 	l2.6,10.1L65.5,35.7z"/>
 	</symbol>
 
-	<symbol id="Settings_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+	<symbol id="Settings_icon" viewBox="50 0 50 50" >
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M72.6,33.2L72,32.9c0-0.4,0-0.9-0.1-1.4l0.6-0.3c0.4-0.2,0.5-0.6,0.4-1l-0.3-0.8c-0.2-0.4-0.6-0.5-1-0.4
 		L71,29.5c-0.3-0.4-0.6-0.7-1-0.9l0.2-0.6c0.1-0.4-0.1-0.8-0.4-0.9L69,26.7c-0.4-0.1-0.8,0.1-0.9,0.4l-0.3,0.7c-0.4,0-0.9,0-1.4,0.1
 		l-0.3-0.6c-0.2-0.4-0.6-0.5-1-0.4l-0.8,0.3c-0.4,0.2-0.5,0.6-0.4,1l0.3,0.6c-0.4,0.3-0.7,0.6-0.9,1l-0.6-0.2
@@ -83,8 +74,8 @@
 		c-1.1-2.5-0.1-5.4,2.4-6.5c0.7-0.3,1.3-0.5,2.1-0.5c1.9,0,3.7,1.1,4.5,2.9C84.3,21.5,83.3,24.4,80.8,25.5z"/>
 	</symbol>
 
-	<symbol id="List_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+	<symbol id="List_icon" viewBox="50 0 50 50" >
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 <path class="svg_light_broun" d="M76,12.5h-0.6c-0.3,0-0.6-0.3-0.6-0.6l0,0c0-0.8-0.6-1.4-1.4-1.4l0,0c-0.8,0-1.4,0.6-1.4,1.4l0,0
 	c0,0.3-0.3,0.6-0.6,0.6h-0.6c-0.7,0-1.2,0.5-1.2,1.2l0,0c0,0.7,0.5,1.2,1.2,1.2H76c0.7,0,1.2-0.5,1.2-1.2l0,0
 	C77.2,13,76.7,12.5,76,12.5z M73.4,12.5c-0.3,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6c0.3,0,0.6,0.3,0.6,0.6S73.7,12.5,73.4,12.5z
@@ -104,15 +95,15 @@
 	l-1.5,1.7c-0.1,0.1-0.2,0.1-0.3,0.1s-0.2,0-0.2-0.1l-0.9-0.7c-0.2-0.1-0.2-0.4-0.1-0.5c0.1-0.2,0.4-0.2,0.5-0.1l0.6,0.5l1.2-1.4
 	c0.1-0.2,0.4-0.2,0.5,0C70.9,29.4,71,29.7,70.8,29.8z"/>
 	</symbol>
-	<symbol id="Mail_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-		<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+	<symbol id="Mail_icon" viewBox="50 0 50 50" >
+		<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 <path class="svg_light_broun" d="M87,30.7c0,0.5-0.2,1-0.4,1.4L79,24l7.5-6.2c0.3,0.5,0.5,0.9,0.5,1.6V30.7z M75,25.5l10.5-8.7
 	c-0.4-0.2-0.9-0.4-1.4-0.4H66c-0.5,0-1,0.1-1.4,0.4L75,25.5z M77.9,25l-2.4,2c-0.1,0.1-0.3,0.2-0.5,0.2s-0.4-0.1-0.5-0.2l-2.4-2
 	l-7.7,8.1c0.5,0.3,1,0.5,1.5,0.5h18c0.6,0,1.2-0.2,1.5-0.5L77.9,25z M63.5,17.8c-0.3,0.5-0.5,0.9-0.5,1.6v11.4c0,0.5,0.2,1,0.4,1.4
 	l7.6-8L63.5,17.8z"/>
 </symbol>
-<symbol id="Market_icon" viewBox="50 0 50 50"  style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+<symbol id="Market_icon" viewBox="50 0 50 50" >
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 
 	<path class="svg_light_broun" d="M63.2,15.2c-0.5-1.7,0.3-3.5,1.9-4.1c1.6-0.6,3.2,0.4,3.7,2l5.8,19.2c-0.5-0.2-1.1-0.2-1.7-0.1l-5.6-18.5
 		c-0.2-0.8-1-1.2-1.7-0.9c-0.7,0.3-1.1,1.1-0.9,1.9c0.1,0.5-0.1,0.9-0.5,1.1C63.8,15.9,63.3,15.7,63.2,15.2z M85.9,30.3l-9.5,3.4
@@ -125,8 +116,8 @@
 		C79.2,17.4,79.2,17.3,79.2,17.1z"/>
 	</symbol>
 
-<symbol id="Pad_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-	<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+<symbol id="Pad_icon" viewBox="50 0 50 50">
+	<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 		<path class="svg_light_broun" d="M70.3,20.1c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5c0.8,0,1.5-0.7,1.5-1.5C71.8,20.8,71.1,20.1,70.3,20.1z"/>
 		<path class="svg_light_broun" d="M74.4,17c-1.2-0.1-2.5-0.5-4.1-1.2h-0.1h-0.1c-4.7,0-8,8.2-8,13.8c0,1.3,0.2,2.4,0.6,3.2
 			c0.5,0.9,1.2,1.4,2.1,1.4c2.1,0,3.3-1.2,4.6-2.4c1.4-1.3,2.9-2.7,5.7-2.7c2.4,0,4.2,1.4,5.9,2.8c1.5,1.2,2.8,2.2,4.4,2.2
@@ -139,8 +130,8 @@
 			c-0.1,0.3-0.2,0.5-0.5,0.7c-0.2,0.1-0.4,0.2-0.6,0.2c-0.4,0-0.7-0.2-1-0.5c-0.2-0.3-0.2-0.6-0.2-0.9c0.1-0.3,0.2-0.5,0.5-0.7
 			c0.5-0.3,1.2-0.2,1.6,0.3C82.9,21.1,82.9,21.4,82.8,21.7z"/>
 		</symbol>
-		<symbol id="Paid_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-			<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+		<symbol id="Paid_icon" viewBox="50 0 50 50">
+			<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M66,16.8h13.4c0.7,0,1.3-0.6,1.3-1.3v-0.7c0-0.7-0.6-1.3-1.3-1.3H66c-0.7,0-1.3,0.6-1.3,1.3v0.7
 		C64.7,16.3,65.3,16.8,66,16.8z"/>
 	<path class="svg_light_broun" d="M64,21.4h13.4c0.7,0,1.3-0.6,1.3-1.3v-0.7c0-0.7-0.6-1.3-1.3-1.3H64c-0.7,0-1.3,0.6-1.3,1.3v0.7
@@ -160,8 +151,8 @@
 		c0-0.2,0.1-0.3,0.2-0.4c0.1-0.1,0.3-0.2,0.5-0.2h1.3v-1.2V30h-1.4c-0.4,0-0.6-0.3-0.6-0.6v-2.1v-0.9c0-0.1,0-0.3,0.1-0.4
 		c0.1-0.2,0.3-0.3,0.5-0.3l0,0h1.4v-0.9c0-0.4,0.3-0.6,0.6-0.6C80.6,24.2,80.9,24.5,80.9,24.8z"/>
 		</symbol>
-		<symbol id="Soc_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-			<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+		<symbol id="Soc_icon" viewBox="50 0 50 50">
+			<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M68.8,23.7L68.8,23.7h0.2c0.8,0.7,1.6,1.1,2.5,1.1c0.8,0,1.7-0.4,2.5-1l0.1-0.1l0.2,0.1
 		c0.1,0.1,0.4,0.3,0.5,0.4l0.2,0.1l0,0h0.1c0.1,0.1,0.3,0.2,0.5,0.3c0.2,0.1,0.3,0.1,0.5,0.2c0,0,0.8,0.3,1.7,0.7h0.2
 		c0.8,0.3,1.2,0.8,1.2,0.8c1.3,1.9,1.5,6.3,1.5,6.8c0,0.7-0.2,0.8-0.2,0.9c-3,1.3-7.5,1.6-8.4,1.7l0,0l0,0h-0.1l0,0l0,0
@@ -179,8 +170,8 @@
 		c0,0.2-0.1,0.4-0.3,0.6c0,0.1-0.1,0.1-0.1,0.2c-0.3,1.9-2.1,4.1-3.9,4.1c-1.5,0-3.4-1.9-3.7-4.1c0-0.1,0-0.1-0.1-0.2
 		c-0.1-0.1-0.2-0.3-0.3-0.6C67.3,18.7,67.3,18.3,67.4,18.1z"/>
 		</symbol>
-		<symbol id="News_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-			<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+		<symbol id="News_icon" viewBox="50 0 50 50">
+			<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M69.9,30.4c0.8,1.8,2,3.4,3.7,5c-3.2-0.5-6-2.4-7.5-5.1L69.9,30.4z M73.5,14.6c-3,0.5-5.7,2.3-7.3,4.8h3.7
 	C70.7,17.8,71.9,16.2,73.5,14.6z M74.7,19.6v-5.1l0,0c-1.8,1.6-3.2,3.3-4.1,5L74.7,19.6z M66.2,21.2h-0.8h-0.7l-0.1,5.2l-2.9-5.3
 	h-0.8h-0.8L60,28.5h0.7h0.7l0.1-5.4l3,5.4h0.8H66L66.2,21.2z M73.1,22.5v-0.7v-0.7l-5.5-0.1l-0.1,7.4l5.6,0.1v-0.7v-0.7h-4.1v-1.9
@@ -194,8 +185,8 @@
 	c-0.5,0-0.9-0.1-1.1-0.3c-0.2-0.2-0.5-0.6-0.5-0.9H84c0,0.8,0.3,1.5,0.8,1.9c0.6,0.5,1.2,0.7,2.3,0.7c0.9,0,1.7-0.2,2.3-0.6
 	c0.6-0.5,0.8-0.9,0.8-1.7C90,26.1,89.9,25.6,89.6,25.2z M74.6,35.3v-4.8h-3.8C71.7,32.1,72.9,33.8,74.6,35.3z"/>
 		</symbol>
-		<symbol id="Personal_icon" viewBox="50 0 50 50" style="fill:#4C4646;">
-		<ellipse class="svg_light_broun_stroke" style="fill:none;stroke:#4C4646;stroke-miterlimit:10" cx="75" cy="25" rx="24.4" ry="24.4"/>
+		<symbol id="Personal_icon" viewBox="50 0 50 50">
+		<ellipse class="svg_light_broun_stroke" cx="75" cy="25" rx="24.4" ry="24.4"/>
 	<path class="svg_light_broun" d="M81.2,23.2c0-0.6-0.4-1-0.9-1h-3.1c-0.5,0-0.9,0.5-0.9,1v0.3H63.2c-0.1,0.4-0.1,0.9-0.1,1.3
 		c0,0.5,0,0.9,0.1,1.3h13.1v0.3c0,0.6,0.4,1,0.9,1h3.1c0.5,0,0.9-0.5,0.9-1v-0.3h5.6c0.1-0.4,0.1-0.9,0.1-1.3c0-0.5,0-0.9-0.1-1.3
 		h-5.6V23.2z M80,26.3h-2.5v-2.8H80V26.3z"/>
