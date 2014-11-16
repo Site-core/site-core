@@ -15,10 +15,8 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons Pad_icon">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Pad_icon"></use>
-			</svg>
+		<div class="description_icons" id="Pad_icon">
+			
 			</div>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
@@ -118,7 +116,7 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
-<div id="svg3"></div>
+<div class="svg_test"></div>
 <svg id="svg"></svg>
 <svg id="svg2"></svg>
 <script>
@@ -154,21 +152,10 @@ var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, m
 console.log(s);
 
 // Создать фигуру
-var s3 = Snap(800,600);
+var s3 = Snap();
 var circle;
-$('#svg3').append(s3);
+$('.svg_test').append(s3);
 s3.circle(150, 150, 100);
-
-
-//var svgEl = SVG.getElementById('shadow');
-	$('#svg2').hover(
-  function() {
-	console.log($('#Pad_icon > .svg_light_broun'));
-	$('#Pad_icon .svg_light_broun').css('fill','blue');
-  }, function() {
-    //$(svg_style).remove();
-  }
-);
 });
 </script>
 
