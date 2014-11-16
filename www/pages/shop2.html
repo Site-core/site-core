@@ -154,11 +154,12 @@ var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, m
 console.log(s);
 
 // Создать фигуру
-var s3 = Snap(800,600);
+var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg_tag.setAttribute("viewBox","0 0 500 300");
+var s3 = Snap(svg_tag);
 var circle;
-$('#svg3').append(s3);
 s3.circle(150, 150, 100);
-
+$('#svg3').append(svg_tag);
 
 //var svgEl = SVG.getElementById('shadow');
 	$('#svg2').hover(
