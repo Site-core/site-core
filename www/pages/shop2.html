@@ -28,9 +28,7 @@
 		
 		<div class="spoiler-link">
 		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Settings_icon" ></use>
-			</svg>
+			
 			</div>
 			<h2>Управление и настройка, через удобную Админ-панель.</h2>
 			<div class="spoiler-body">
@@ -42,9 +40,6 @@
 	<li>
 		<div class="spoiler-link">
 			<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#List_icon" ></use>
-			</svg>
 			</div>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
@@ -57,9 +52,7 @@
 		
 		<div class="spoiler-link">
 		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Market_icon" ></use>
-			</svg>
+	
 			</div>
 			<h2>Управление товарами</h2>
 			<div class="spoiler-body">
@@ -72,9 +65,7 @@
 		
 		<div class="spoiler-link">
 		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Delivery_icon" ></use>
-			</svg>
+			
 			</div>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
@@ -87,9 +78,6 @@
 		
 		<div class="spoiler-link">
 		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Paid_icon" ></use>
-			</svg>
 			</div>
 			<h2>Поддержка оплаты заказов, через любые сервисы.</h2>
 			<div class="spoiler-body">
@@ -102,9 +90,6 @@
 		
 		<div class="spoiler-link">
 		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Soc_icon" ></use>
-			</svg>
 			</div>
 			<h2>Интеграция с сайтом</h2>
 			<div class="spoiler-body">
@@ -116,62 +101,30 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
-<div class="svg_test"></div>
-<svg id="svg"></svg>
-<svg id="svg2"></svg>
 <script>
 $( ".spoiler-link" ).click(function() {
 if($('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','');		
 } else {
 	$('h2', this).css('color','#d7844d');
+
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
 $(document).ready(function(){
-var s = Snap("#svg");
 
-
-var s2 = Snap("#svg2");
-
-var group = s2.group();
-
-Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
-
-function onSVGLoaded( data ){
-console.log(data);
-    s.append(data);
-//	var pad = data.select("#Pad_icon");
-//	var usePad = pad.use();
-//    g.append(usePad);
-	group.hover( hoverover, hoverout );
-	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
-}
-var hoverover = function() { group.animate({ transform: 's2r45,150,150' }, 1000, mina.bounce ) };
-var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };
-console.log(s);
-
-// Создать фигуру
 
 var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svg_tag.setAttribute("viewBox","0 0 500 300");
+svg_tag.setAttribute("viewBox","0 0 56.5 50");
 var s3 = Snap(svg_tag);
-var circle;
-s3.circle(150, 150, 100);
-$('#svg3').append(svg_tag);
-
-//var svgEl = SVG.getElementById('shadow');
-	$('#svg2').hover(
-  function() {
-	console.log($('#Pad_icon > .svg_light_broun'));
-	$('#Pad_icon .svg_light_broun').css('fill','blue');
-  }, function() {
-    //$(svg_style).remove();
-  }
-);
+Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
+function onSVGLoaded( data ){
+var pad = data.select("#PadIcon");
+s3.append(pad);
+};
+$('#Pad_icon').append(svg_tag);
 
 });
 </script>
-
 
 
