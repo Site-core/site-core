@@ -118,6 +118,7 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
+<div id="svg3"></div>
 <svg id="svg"></svg>
 <svg id="svg2"></svg>
 <script>
@@ -134,6 +135,7 @@ var s = Snap("#svg");
 
 
 var s2 = Snap("#svg2");
+
 var group = s2.group();
 
 Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
@@ -151,9 +153,11 @@ var hoverover = function() { group.animate({ transform: 's2r45,150,150' }, 1000,
 var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };
 console.log(s);
 
-//var SVG = document.getElementById("lol1");
-//$(SVG).css("fill","red");
-
+// Создать фигуру
+var s3 = Snap(800,600);
+var circle;
+$('#svg3').append(s3);
+s3.circle(150, 150, 100);
 
 
 //var svgEl = SVG.getElementById('shadow');
