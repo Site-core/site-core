@@ -1,0 +1,173 @@
+html {
+	height:100%;
+}
+body {
+	height: 100%;
+	background-color: #bfbfbf !important; /* Reset.css обнуляет bacground, можно обойтись без !important, просто так быстрее*/
+}
+
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	padding: 1px 10px 0;
+	min-height: 100%;
+	max-width: 1260px;
+	min-width: 1000px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #ebebeb;
+	margin: 45px auto 20px;
+	height: 205px;
+}
+
+.content {
+	float: left;
+	width: 77.12%;
+	margin-left: 1.08%;
+}
+
+.hotel-name {
+	background-color: #f6f6f6;
+	position: relative;
+	padding: 15px;
+}
+
+.hotel-name img {
+	width: 115px;
+	height: 85px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.hotel-name > div {
+	padding: 0 0 0 130px;
+}
+
+.hotel-name > div > div:first-child {
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 10px;
+}
+
+.hotel-name > div > div:first-child > a {
+	font-size: 0.6875em;
+	color: #999;
+}
+
+.hotel-name > div > div:first-child > a:hover {
+	color: #555;
+	}
+
+.hotel-name > div > div:first-child h2 {
+	font-size: 0.9375em;
+}
+
+.hotel-name > div > div:first-child h2 a {
+	font-size: 0.6875em;
+	vertical-align: middle;
+	padding-left: 0.5625em;
+}
+
+.hotel-name > div > div:first-child + div {
+	padding-top: 15px;
+}
+
+.green-button {
+	display: block;
+	width: 42px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0.75em;
+	line-height: 24px;
+	background-color: #00a551;
+	border-radius: 3px;
+}
+
+.hotel-events h2 {
+	line-height: 50px;
+	padding-left: 15px;
+	vertical-align: middle;
+	font-size: 0.875em;
+	color: #1b1b1b;
+}
+
+.hotel-events h2 a {
+	color: #bbb;
+	font-size: 0.875em;
+}
+
+.hotel-events h2 a:hover {
+	color: #333;
+}
+
+.clear-fix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.left-bar {
+	width: 21.8%;
+	float: left;
+	background-color: #ebebeb;
+}
+
+.right-bar {
+	width: 24.82%;
+	min-height: 100px;
+	float: right;
+	background-color: #ebebeb;
+}
+
+.event {
+	float: left;
+	width: 73.79%;
+}
+
+.event > div {
+	background-color: #fffbed;
+	margin-bottom: 8px;
+	padding: 21px 15px;
+}
+
+.event > div:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.event > div img {
+	width: 58px;
+	float: left;
+}
+
+.event > div ul {
+	padding-left: 15px;
+	float: left;
+}
+.event > div ul li {
+	line-height: 1.58em;
+	vertical-align: middle;
+}
+
+.event > div ul li:first-child {
+	font-size: 0.75em;
+}
+
+.event > div ul li:first-child + li {
+	color: #b469bd;
+	font-size: 0.9375em;
+}
+
+.event > div ul li:first-child + li + li {
+	font-size: 0.6875em;
+	color: #999;
+}
+
+

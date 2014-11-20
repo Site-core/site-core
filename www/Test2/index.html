@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper clear-fix">
+		<div class="header"></div>
+		<div id="contentWrapper" class="clear-fix">
+		<div class="left-bar"></div>
+		<div class="content clear-fix">
+			<div class="hotel-name">
+				<img src="img/Hotel.png" alt="lorem">
+				<div>
+					<div>
+					<h2>Hustinatio Club Park Conti 5*<a href="#">Отель на TopHotels</a></h2>
+					<a href=""> Турция,</a><a href=""> Алания,</a><a href=""> Окурджалар</a>
+					</div>
+						<div>
+							<a class="green-button" href="#">4.12</a>
+						</div>
+				</div>
+
+			</div>
+			<div class="hotel-events">
+				<h2>События в отеле<a href="#"> - 4</a></h2> <!-- Возможно, такая запись не валидна, тогда разделим h2 и a, зададим размер h2, для а пропишем флоат или inline-block -->
+				
+				<div class="event">
+				<div>
+					<img src="img/VB.png">
+					<ul>
+					<li>19 июн 2014<span>, сб</span></li>
+					<li>Вера Брежнева</li>
+					<li>Добавлено 15 апр 2014 в 15:02</li>
+					</ul>
+					
+				</div>
+				<div>
+					<img src="img/VB.png">
+					<ul>
+					<li>19 июн 2014<span>, сб</span></li>
+					<li>Вера Брежнева</li>
+					<li><span>Добавлено 15 апр 2014 в 15:02</span></li>
+					</ul>
+				</div>	
+				</div>
+				<div class="right-bar"></div>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var rightBarHeight = ($('.event').height()) - 8;
+		var leftBarHeight = ($('#contentWrapper').height()) - 8;
+		$('.right-bar').css('min-height', rightBarHeight);
+		$('.left-bar').css('min-height', leftBarHeight);
+
+	});
+	</script>
+</body>
+</html>
