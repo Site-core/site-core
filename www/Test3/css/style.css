@@ -1,0 +1,101 @@
+html {
+	height:100%;
+}
+body {
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	min-height: 100%;
+	background: #3279c6; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMjc5YzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmI2ZGI1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  #3279c6 0%, #2b6db5 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3279c6), color-stop(100%,#2b6db5)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #3279c6 0%,#2b6db5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #3279c6 0%,#2b6db5 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #3279c6 0%,#2b6db5 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #3279c6 0%,#2b6db5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', endColorstr='#2b6db5',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+
+.container {
+	width: 80%;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.counter-cont {
+	width: 70%;
+	position: relative;
+	background-color: #b0b0b0;
+	height: 14px;
+	margin: 0 auto;
+}
+
+.counter {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.old-man {
+	background: url(../img/sad.png) no-repeat center center;
+	background-size: contain;
+	width: 30%;
+	height: 70%;
+	position: relative;
+	margin: 0 auto 6%;
+}
+
+.happyMan {
+	background: url(../img/happy.png) no-repeat center center;
+	background-size: contain;
+}
+
+.pill {
+	width: 100px;
+	height: 43px;
+	background: url(../img/780px-Pill.svg[1].png) no-repeat center center;
+	background-size: contain;
+}
+
+.ui-slider-handle {
+width:44px;
+height:44px;
+position:absolute;
+margin-left: -44px;
+top: -100%;
+background: url(../img/roller_white.png) no-repeat center center;
+background-size: contain;
+border-radius: 100%;
+}
+
+ul {
+	width: 70%;
+	margin: 10px auto;
+}
+
+ul:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+ul li {
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 4.7619%;
+	line-height: 20px;
+	color: white;
+}

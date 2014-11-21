@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="container">
+		<div class="old-man"></div>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>13</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+		</ul>
+		<div class="counter-cont">
+			<div class="counter"></div>
+		</div>
+		
+		<div class="pill"></div>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.pill').draggable();
+		$('.old-man').droppable({
+        drop: function() {
+            $('.pill').css('display','none'),
+            $(this).addClass('happyMan');
+        }
+    });
+		$('.counter').slider({
+			max: 21,
+			step: 1,
+			value: 1,
+			animate: "slow",
+				 change: function( event, ui ){
+				 	console.log($('.counter').slider('value'))
+				 }
+		});
+	});
+	</script>
+</body>
+</html>
