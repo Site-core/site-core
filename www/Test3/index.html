@@ -12,7 +12,7 @@
 	<div class="wrapper">
 	<div class="container">
 		<div class="old-man"></div>
-		<ul>
+		<ul id="list">
 			<li>1</li>
 			<li>2</li>
 			<li>3</li>
@@ -53,13 +53,17 @@
         }
     });
 		$('.counter').slider({
+			min: 1,
 			max: 21,
 			step: 1,
 			value: 1,
 			animate: "slow",
 				 change: function( event, ui ){
-				 	console.log($('.counter').slider('value'))
+				 		numbers = $('.counter').slider('value'),
+				 		$('#list li:eq(' + (numbers - 1) + ')').addClass('active'),
+				 		console.log(numbers);
 				 }
+
 		});
 	});
 	</script>

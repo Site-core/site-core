@@ -73,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', end
 width:44px;
 height:44px;
 position:absolute;
-margin-left: -44px;
+margin-left: -46px;
 top: -100%;
 background: url(../img/roller_white.png) no-repeat center center;
 background-size: contain;
@@ -95,7 +95,21 @@ ul li {
 	text-align: center;
 	position: relative;
 	float: left;
-	width: 4.7619%;
-	line-height: 20px;
+	width: 3%;
+	line-height: 30px;
+	margin: 0 1% 10px;
 	color: white;
+	border-radius: 22%;
+}
+
+ul li:first-child {
+	margin-left: -3.9%;
+}
+
+ul li:last-child {
+	margin: 0 0 10px 1%;
+}
+
+.active {
+	background-color: red;
 }
