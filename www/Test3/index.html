@@ -7,12 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.touch.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 	<div class="container">
-		<div class="old-man"></div>
-		<ul id="list">
+	<div id="arrowLeft" class="arrow"></div>
+	<div id="arrowRight" class="arrow"></div>
+	<div class="slider-cont">
+	<div id="slide1" class="slide">
+			<div class="old-man"></div>
+		<ul class="list">
 			<li>1</li>
 			<li>2</li>
 			<li>3</li>
@@ -35,36 +40,111 @@
 			<li>20</li>
 			<li>21</li>
 		</ul>
-		<div class="counter-cont">
-			<div class="counter"></div>
+		<div class="counter-wrapp">
+			<div id="firstCounter" class="counter">
+			<div class="counter-cont">
 		</div>
-		
+		</div>
+		</div>
 		<div class="pill"></div>
+
+	</div>
+
+		<div id="slide2" class="slide">
+		<div class="old-man"></div>
+		<ul class="list">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>13</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+		</ul>
+		<div class="counter-wrapp">
+			<div id="secondCounter" class="counter">
+			<div class="counter-cont">
+		</div>
+		</div>
+		</div>
+		<div class="pill"></div>
+
+	</div>
+
+	</div>
 	</div>
 	</div>
 
 	<script type="text/javascript">
 	$(document).ready(function(){
+		currentPos = 0,
+		slide = $('.slide'),
+		widthSlide = slide.width(),
+		numberOfSlides = slide.length,
+		numbers = 0,
+		manageControls(currentPos);
+		function  manageControls(position){
+  if(position==0)  { $('#arrowLeft').hide(); }
+  else { $('#arrowLeft').show(); }
+  if(position==numberOfSlides-1) {  $('#arrowRight').hide(); }
+  else { $('#arrowRight').show(); }
+};
+		$('#arrowLeft').click(function(){
+			currentPos = currentPos - 1;
+            manageControls(currentPos);
+      $('.slider-cont').animate({'marginLeft' : widthSlide*(-currentPos)
+		});
+  });
+
+      $('#arrowRight').click(function(){
+			currentPos = currentPos + 1;
+            manageControls(currentPos);
+      $('.slider-cont').animate({'marginLeft' : widthSlide*(-currentPos)
+		});
+  });
 		$('.pill').draggable();
 		$('.old-man').droppable({
         drop: function() {
             $('.pill').css('display','none'),
-            $(this).addClass('happyMan');
+            $('.old-man').addClass('happyMan')
         }
     });
-		$('.counter').slider({
-			min: 1,
-			max: 21,
-			step: 1,
-			value: 1,
-			animate: "slow",
-				 change: function( event, ui ){
-				 		numbers = $('.counter').slider('value'),
-				 		$('#list li:eq(' + (numbers - 1) + ')').addClass('active'),
-				 		console.log(numbers);
-				 }
 
+		$('#secondCounter').slider({
+			max: 20,
+			step: 1,
+			animate: "slow",
+			disabled: true
 		});
+
+		$('.ui-slider-handle').draggable();
+		$('.ui-draggable').draggable();
+		$('.counter').slider({
+			max: 20,
+			step: 1,
+			animate: "slow",
+				 stop: function( event, ui ){
+				 		numbers = $('#firstCounter').slider('value'),
+				 		$('.list li:eq(' + numbers + ')').addClass('active'),
+				 		$('#secondCounter').slider("value", numbers)
+				 }
+		});
+		
+		
 	});
 	</script>
 </body>
