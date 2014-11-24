@@ -10,6 +10,7 @@ body {
 }
 .wrapper {
 	min-height: 100%;
+	width: 100%;
 	background: #3279c6; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMjc5YzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmI2ZGI1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -30,8 +31,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', end
 }
 
 .container {
-	width: 80%;
-	height: 700px;
+	width: 1024px;
+	height: 760px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -39,6 +40,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', end
 	right: 0;
 	margin: auto;
 	overflow: hidden;
+}
+
+.face {
+	width: 5%;
+	height: 0;
+	padding-bottom: 5%;
+	background-color: #fff;
+}
+
+.logo {
+	width: 35%;
+	color: #fff;
+	padding-top: 5% 
+}
+
+.logo h1 {
+	width: 100%;
+	font-size: 4em;
+}
+
+.logo h4 {
+	width: 100%;
 }
 
 .slider-cont {
@@ -67,10 +90,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', end
 .old-man {
 	background: url(../img/sad.png) no-repeat center center;
 	background-size: contain;
-	width: 30%;
-	height: 70%;
+	width: 72.15%;
+	height: 62.5%;
 	position: relative;
-	margin: 0 auto 6%;
+	margin: 0 auto;
 }
 
 .happyMan {
@@ -108,18 +131,20 @@ ul:after {
 }
 
 ul li {
+	border: 2px solid transparent;
 	text-align: center;
 	position: relative;
 	float: left;
-	width: 3%;
+	width: 5%;
 	line-height: 30px;
-	margin: 10px 1%;
+	margin: 10px 0;
 	color: white;
-	border-radius: 22%;
+	border-radius: 28%;
+	font-size: 18px;
 }
 
 ul li:first-child {
-	margin-left: -1.5%;
+	margin-left: -2.7%;
 }
 
 ul li:last-child {
@@ -127,15 +152,16 @@ ul li:last-child {
 }
 
 .active {
-	background-color: red;
+	border: 2px solid #821500;
+	background-color: #e00212;
 }
 
 .arrow {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 50px;
-	height: 50px;
+	width: 44px;
+	height: 44px;
 	background-color: rgba(0,0,0,0.3);
 	margin: auto;
 }

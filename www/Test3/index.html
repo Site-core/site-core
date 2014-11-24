@@ -16,7 +16,12 @@
 	<div id="arrowRight" class="arrow"></div>
 	<div class="slider-cont">
 	<div id="slide1" class="slide">
-			<div class="old-man"></div>
+		<div class="old-man">
+		<div class="logo">
+		<h1>Розулип</h1><h4>Легко на сердце от чистых сосудов</h4>
+		</div>
+		<div class="pill"></div>
+		</div>
 		<ul class="list">
 			<li>1</li>
 			<li>2</li>
@@ -46,7 +51,6 @@
 		</div>
 		</div>
 		</div>
-		<div class="pill"></div>
 
 	</div>
 
@@ -123,6 +127,9 @@
             $('.old-man').addClass('happyMan')
         }
     });
+		
+		$('.ui-slider-handle').draggable();
+		$('.ui-draggable').draggable();
 
 		$('#secondCounter').slider({
 			max: 20,
@@ -131,8 +138,6 @@
 			disabled: true
 		});
 
-		$('.ui-slider-handle').draggable();
-		$('.ui-draggable').draggable();
 		$('.counter').slider({
 			max: 20,
 			step: 1,
