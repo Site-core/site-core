@@ -166,6 +166,7 @@
 			animate: "slow",
 				 stop: function( event, ui ){
 				 		numbers = $('#firstCounter').slider('value'),
+						$('.list li').removeClass('active'),
 				 		$('.list li:eq(' + numbers + ')').addClass('active'),
 				 		$('#secondCounter').slider("value", numbers)
 				 }
