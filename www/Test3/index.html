@@ -12,6 +12,7 @@
 <body>
 	<div class="wrapper">
 	<div class="container">
+<<<<<<< HEAD
 	<div id="arrowLeft" class="arrow"></div>
 	<div id="arrowRight" class="arrow"></div>
 	<div class="slider-cont">
@@ -24,6 +25,10 @@
 		</div>
 		<div class="list">
 		<ul >
+=======
+		<div class="old-man"></div>
+		<ul>
+>>>>>>> parent of adcbcd2... тест3
 			<li>1</li>
 			<li>2</li>
 			<li>3</li>
@@ -161,14 +166,23 @@
 		});
 
 		$('.counter').slider({
+<<<<<<< HEAD
 			max: 20,
+=======
+			max: 21,
+>>>>>>> parent of adcbcd2... тест3
 			step: 1,
 			animate: "slow",
+<<<<<<< HEAD
 				 stop: function( event, ui ){
 				 		numbers = $('#firstCounter').slider('value'),
 						$('.list li').removeClass('active'),
 				 		$('.list li:eq(' + numbers + ')').addClass('active'),
 				 		$('#secondCounter').slider("value", numbers)
+=======
+				 change: function( event, ui ){
+				 	console.log($('.counter').slider('value'))
+>>>>>>> parent of adcbcd2... тест3
 				 }
 		});
 		

@@ -115,7 +115,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3279c6', end
 width:44px;
 height:44px;
 position:absolute;
+<<<<<<< HEAD
 margin-left: -22px;
+=======
+margin-left: -44px;
+>>>>>>> parent of adcbcd2... тест3
 top: -100%;
 background: url(../img/roller_white.png) no-repeat center center;
 background-size: contain;
@@ -145,6 +149,7 @@ ul li {
 	text-align: center;
 	position: relative;
 	float: left;
+<<<<<<< HEAD
 	width: 5%;
 	line-height: 30px;
 	margin: 10px 0;
@@ -189,6 +194,11 @@ ul li:last-child {
 .date-unit {
 	width: 48.44%;
 	margin: 5% auto 0;
+=======
+	width: 4.7619%;
+	line-height: 20px;
+	color: white;
+>>>>>>> parent of adcbcd2... тест3
 }
 
 .date-unit > div {
