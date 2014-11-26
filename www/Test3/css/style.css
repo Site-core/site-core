@@ -116,7 +116,11 @@ width:44px;
 height:44px;
 position:absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 margin-left: -22px;
+=======
+margin-left: -44px;
+>>>>>>> parent of adcbcd2... тест3
 =======
 margin-left: -44px;
 >>>>>>> parent of adcbcd2... тест3
@@ -149,6 +153,7 @@ ul li {
 	text-align: center;
 	position: relative;
 	float: left;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	width: 5%;
 	line-height: 30px;
@@ -242,4 +247,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe0f5', end
 -webkit-box-shadow: inset 0px 0px 4px 1px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    inset 0px 0px 4px 1px rgba(50, 50, 50, 0.75);
 box-shadow:         inset 0px 0px 4px 1px rgba(50, 50, 50, 0.75);
+=======
+	width: 4.7619%;
+	line-height: 20px;
+	color: white;
+>>>>>>> parent of adcbcd2... тест3
 }
