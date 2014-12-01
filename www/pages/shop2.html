@@ -141,6 +141,11 @@ Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
 function onSVGLoaded( data ){
 console.log(data);
     s.append(data);
+//	var pad = data.select("#Pad_icon");
+//	var usePad = pad.use();
+//    g.append(usePad);
+	group.hover( hoverover, hoverout );
+	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
 }
 var hoverover = function() { group.animate({ transform: 's2r45,150,150' }, 1000, mina.bounce ) };
 var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };

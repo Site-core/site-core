@@ -15,7 +15,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Pad_icon" ></use>
+			</svg>
+			</div>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
 				<p>Несмотря на то, что магазин идеально подходит новичкам, функционал магазина от этого никак не пострадал, и его с легкостью могут использовать профессионалы. Для создания своего магазина с нуля вам не нужны знания языков программирования и настройки серверов: все действия происходят через браузер в интуитивно-понятном интерфейсе. Даже если у вас возникнут вопросы, вы всегда сможете получить помощь.</p>
@@ -25,7 +29,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Settings_icon" ></use>
+			</svg>
+			</div>
 			<h2>Управление и настройка, через удобную Админ-панель.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -35,7 +43,11 @@
 	</li>
 	<li>
 		<div class="spoiler-link">
-			<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+			<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#List_icon" ></use>
+			</svg>
+			</div>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
 				<p>
@@ -46,7 +58,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Market_icon" ></use>
+			</svg>
+			</div>
 			<h2>Управление товарами</h2>
 			<div class="spoiler-body">
 				<p>
@@ -57,7 +73,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Delivery_icon" ></use>
+			</svg>
+			</div>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
 				<p>
@@ -68,7 +88,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Paid_icon" ></use>
+			</svg>
+			</div>
 			<h2>Поддержка оплаты заказов, через любые сервисы.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -79,7 +103,11 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 55.96 50"></svg>
+		<div class="description_icons">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Soc_icon" ></use>
+			</svg>
+			</div>
 			<h2>Интеграция с сайтом</h2>
 			<div class="spoiler-body">
 				<p> Интернет-магазин может быть лишь частью вашего сайта. К примеру, пользователь может почитать интересные статьи о вас и характеристике ваших товаров, после чего перейти в интернет-магазин и что-то купить.</p>
@@ -99,24 +127,17 @@ if($('.spoiler-body', this).is(":visible")){
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
-
-var iconSpot = Snap('.description_icons');
-Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
-function onSVGLoaded( data ){
-    iconSpot.append(data);
-};
-
-$( ".spoiler-link" ).click(function() {
-if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color',''),
-	$('.RoundArrow').
-} else {
-	$('h2', this).css('color','#d7844d');
-}
-$('.spoiler-body', this).stop().slideToggle(300);
+$(document).ready(function(){
+var SVG = document.getElementById("svg_arrow");	
+var svgEl = SVG.getElementById('shadow');
+	$( ".side_arrow" ).hover(
+  function() {
+    $(SVG).css("opacity","0.2");
+  }, function() {
+    $(SVG).css("opacity","1");
+  }
+);
 });
-
-
 </script>
 
 
