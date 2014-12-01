@@ -91,15 +91,6 @@
 <div></div>
 </div>
 <script>
-$( ".spoiler-link" ).click(function() {
-if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color','');		
-} else {
-	$('h2', this).css('color','#d7844d');
-}
-$('.spoiler-body', this).stop().slideToggle(300);
-});
-
 var iconSpot = Snap('.description_icons');
 Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
 function onSVGLoaded( data ){
@@ -108,16 +99,14 @@ function onSVGLoaded( data ){
 
 $( ".spoiler-link" ).click(function() {
 if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color','');
-	$('.RoundArrow').animate({transform:'r90, center'}, 1000, mina.bounce)
+	$('h2', this).css('color',''),
+	$('#RoundArrow').animate({transform:'r90, center'}, 1000, mina.bounce);
 } else {
-	$('h2', this).css('color','#d7844d');
-	$('.RoundArrow').animate({transform:'r0, center'}, 1000, mina.bounce)
+	$('h2', this).css('color','#d7844d'),
+	$('#RoundArrow').animate({transform:'r90, center'}, 1000, mina.bounce);
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
-
-
 </script>
 
 
