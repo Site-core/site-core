@@ -15,8 +15,10 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons" id="Pad_icon">
-			
+		<div class="description_icons Pad_icon">
+			<svg viewBox="0 0 100 100">
+				<use xlink:href="/img/Description_icons.svg#Pad_icon"></use>
+			</svg>
 			</div>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
@@ -116,7 +118,7 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
-<div class="svg_test"></div>
+<div id="svg3"></div>
 <svg id="svg"></svg>
 <svg id="svg2"></svg>
 <script>
@@ -129,49 +131,38 @@ if($('.spoiler-body', this).is(":visible")){
 $('.spoiler-body', this).stop().slideToggle(300);
 });
 $(document).ready(function(){
-var s = Snap("#svg");
+// Создать фигуру
+var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg_tag.setAttribute("viewBox","0 0 100 100");
+var s3 = Snap(svg_tag);
+//var g3 = s3.group();
+var circle;
 
-
-var s2 = Snap("#svg2");
-
-var group = s2.group();
-
-Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
-
+//s3.circle(150, 150, 100);
+Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
 function onSVGLoaded( data ){
-console.log(data);
-    s.append(data);
+//console.log('#Pad_icon', data);
+	g3 = data.select("#Pad_icon");
+	s3.hover(hoverover, hoverout);
+	s3.append( g3 );
 //	var pad = data.select("#Pad_icon");
 //	var usePad = pad.use();
 //    g.append(usePad);
-	group.hover( hoverover, hoverout );
-	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
+//	s2.hover( hoverover, hoverout );
+//	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
+
 }
-var hoverover = function() { group.animate({ transform: 's2r45,150,150' }, 1000, mina.bounce ) };
-var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };
-console.log(s);
-
-// Создать фигуру
-
-var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svg_tag.setAttribute("viewBox","0 0 500 300");
-var s3 = Snap(svg_tag);
-var circle;
-s3.circle(150, 150, 100);
+var hoverover = function() { g3.animate({ transform: 'r90,50,50' }, 1000, mina.bounce ) };
+var hoverout = function() { g3.animate({ transform: 'r0,50,50' }, 1000, mina.bounce ) };
 $('#svg3').append(svg_tag);
-
 //var svgEl = SVG.getElementById('shadow');
-	$('#svg2').hover(
-  function() {
-	console.log($('#Pad_icon > .svg_light_broun'));
-	$('#Pad_icon .svg_light_broun').css('fill','blue');
-  }, function() {
+//	$('#svg2').hover(
+//  function() {
+//	console.log($('#Pad_icon > .svg_light_broun'));
+//	$('#Pad_icon .svg_light_broun').css('fill','blue');
+//  }, function() {
     //$(svg_style).remove();
-  }
-);
-
+//  }
+//);
 });
 </script>
-
-
-
