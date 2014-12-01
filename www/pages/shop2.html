@@ -15,10 +15,8 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons Pad_icon">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Pad_icon"></use>
-			</svg>
+		<div class="description_icons" id="Pad_icon">
+			
 			</div>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
@@ -118,7 +116,7 @@
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
-<div id="svg3"></div>
+<div class="svg_test"></div>
 <svg id="svg"></svg>
 <svg id="svg2"></svg>
 <script>
@@ -132,9 +130,14 @@ $('.spoiler-body', this).stop().slideToggle(300);
 });
 $(document).ready(function(){
 var s = Snap("#svg");
+
+
 var s2 = Snap("#svg2");
+
 var group = s2.group();
+
 Snap.load("/img/Description_icons.svg", onSVGLoaded ) ;
+
 function onSVGLoaded( data ){
 console.log(data);
     s.append(data);
@@ -142,13 +145,16 @@ console.log(data);
 var hoverover = function() { group.animate({ transform: 's2r45,150,150' }, 1000, mina.bounce ) };
 var hoverout = function() { group.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };
 console.log(s);
+
 // Создать фигуру
+
 var svg_tag = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 svg_tag.setAttribute("viewBox","0 0 500 300");
 var s3 = Snap(svg_tag);
 var circle;
 s3.circle(150, 150, 100);
 $('#svg3').append(svg_tag);
+
 //var svgEl = SVG.getElementById('shadow');
 	$('#svg2').hover(
   function() {
@@ -158,5 +164,9 @@ $('#svg3').append(svg_tag);
     //$(svg_style).remove();
   }
 );
+
 });
 </script>
+
+
+
