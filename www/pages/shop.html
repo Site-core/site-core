@@ -87,6 +87,7 @@
 		</div>
 	</li>
 </ul>
+<svg id="mailBuyBox" viewBox="0 0 100 100"></svg>
 <div class="shop-prev"><h2 class="headline">Примеры магазинов</h2>
 <div></div>
 </div>
@@ -95,11 +96,18 @@
 $(document).ready(function(){
 // Создать фигуру
 var s3 = Snap('#svg1');
+var mailBox = Snap('#mailBuyBox')
 //var g3 = s3.group();
 var circle;
 var elipS;
 //s3.circle(150, 150, 100);
 Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
+Snap.load("/img/mailBuy.svg", function ( data ){
+	mailBox.append( data );
+	mailOpened = data.select('#OpenedGrad', '#OpenedCont');
+	mailClosed = data.select('#TopBorder');
+	mailBox.hover( hoverover, hoverout );
+} ) ;
 function onSVGLoaded( data ){
 //console.log('#Pad_icon', data);
 	g3 = data.select("#Pad_icon");
@@ -113,15 +121,18 @@ function onSVGLoaded( data ){
 
 }
 
+function hoverover () { mailOpened.attr({display: ''}); mailClosed.attr({display: 'none'})};
+function hoverout () {mailOpened.attr({display: 'none'}); mailClosed.attr({display: ''})};
+
 $( ".spoiler-link" ).click(function() {
 if($('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#4C4646');
 	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
-	g3.attr({fill: '#4C4646'});	
+	elipS.attr({fill: '#4C4646'});	
 } else {
 	$('h2', this).css('color','#d7844d');
 	elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce );
-	g3.attr({fill: '#d7844d'});	
+	elipS.attr({fill: '#d7844d'});	
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
