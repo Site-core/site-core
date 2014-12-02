@@ -99,21 +99,19 @@ var s3 = Snap('#svg1');
 var mailBox = Snap('#mailBuyBox')
 //var g3 = s3.group();
 var circle;
-var elipS;
-var padJoy;
+
 //s3.circle(150, 150, 100);
 Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
 Snap.load("/img/mailBuy.svg", function ( data ){
-	mailBox.append( data );
+	
 	mailOpened = data.select('#OpenedGrad', '#OpenedCont');
 	mailClosed = data.select('#TopBorder');
 	mailBox.hover( hoverover, hoverout );
+	mailBox.append( data );
 } ) ;
 function onSVGLoaded( data ){
 //console.log('#Pad_icon', data);
 	g3 = data.select("#Pad_icon");
-	elipS = data.select('#RoundArrow_4_');
-	padJoy = data.select('.padJoy');
 	s3.append( g3 );
 //	var pad = data.select("#Pad_icon");
 //	var usePad = pad.use();
@@ -124,25 +122,29 @@ function onSVGLoaded( data ){
 }
 
 var hoverover = function () { 
-	mailOpened.animate({ display: ''}, 300, mina.linear);
-	mailClosed.animate({ display: 'none'}, 300, mina.linear);
+//	mailOpened.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
+//	mailClosed.animate({ display: 'none'}, 300, mina.linear);
+	mailClosed.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
 };
 var hoverout = function () {
-			mailOpened.animate({ display: 'none'}, 300, mina.linear);
-			mailClosed.animate({ display: ''}, 300, mina.linear);
-		};
+//	mailOpened.animate({ display: 'none'}, 300, mina.linear);
+//	mailClosed.animate({ display: ''}, 300, mina.linear);
+};
 
 $( ".spoiler-link" ).click(function() {
-if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color','#4C4646');
-	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
-	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);
-	padJoy.animate({ opacity: '1'}, 300, mina.linear);		
-} else {
+var this_svg = Snap('#'+$('svg', this).attr('id'));
+var elipS = this_svg.select('#RoundArrow_4_');
+var padJoy = this_svg.select('.padJoy');
+if(!$('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
 	elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce );
 	elipS.animate({ fill: '#d7844d'}, 300, mina.linear);
 	padJoy.animate({ opacity: '0.6'}, 300, mina.linear);	
+} else {	
+	$('h2', this).css('color','#4C4646');
+	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
+	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);
+	padJoy.animate({ opacity: '1'}, 300, mina.linear);		
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
