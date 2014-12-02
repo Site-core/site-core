@@ -122,27 +122,26 @@ function onSVGLoaded( data ){
 }
 
 var hoverover = function () { 
-//	mailOpened.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
-//	mailClosed.animate({ display: 'none'}, 300, mina.linear);
-	mailClosed.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
+	mailOpened.attr({ display: ''});
+	mailClosed.attr({ display: 'none'});
 };
 var hoverout = function () {
-//	mailOpened.animate({ display: 'none'}, 300, mina.linear);
-//	mailClosed.animate({ display: ''}, 300, mina.linear);
+	mailOpened.attr({ display: 'none'});
+	mailClosed.attr({ display: ''});
 };
 
 $( ".spoiler-link" ).click(function() {
 var this_svg = Snap('#'+$('svg', this).attr('id'));
-var elipS = this_svg.select('#RoundArrow_4_');
+var elipS = this_svg.select('.RoundArrow');
 var padJoy = this_svg.select('.padJoy');
 if(!$('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
-	elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce );
+	elipS.animate({ transform: 'r90, 25,25' }, 800, mina.bounce );
 	elipS.animate({ fill: '#d7844d'}, 300, mina.linear);
 	padJoy.animate({ opacity: '0.6'}, 300, mina.linear);	
 } else {	
 	$('h2', this).css('color','#4C4646');
-	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
+	elipS.animate({ transform: 'r0, 25,25' }, 800, mina.bounce );
 	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);
 	padJoy.animate({ opacity: '1'}, 300, mina.linear);		
 }
