@@ -185,10 +185,10 @@ textarea {
 }
 
 .spoiler-link > h2 {
-	padding: 14px 8px 14px 60px;
+	padding: 14px 8px 14px 70px;
 	background-size: contain;
 	font-size: 1.1em;
-	color: 
+	color: #4C4646;
 }
 
 
@@ -997,11 +997,9 @@ position:relative;
 .description_icons {
 	position: absolute;
 	left: 0;
-	bottom: 0;
 	top: 0;
-	margin: auto;
-	width: 50px;
-	height: 50px;
+	width: 56px;
+	height: 56px;
 }
 
 .svg_test {

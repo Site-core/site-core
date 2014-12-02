@@ -143,6 +143,7 @@ Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
 function onSVGLoaded( data ){
 //console.log('#Pad_icon', data);
 	g3 = data.select("#Pad_icon");
+	elipS = data.select("#RoundArrow_4_");
 	s3.hover(hoverover, hoverout);
 	s3.append( g3 );
 //	var pad = data.select("#Pad_icon");
@@ -152,8 +153,8 @@ function onSVGLoaded( data ){
 //	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
 
 }
-var hoverover = function() { g3.animate({ transform: 'r90,50,50' }, 1000, mina.bounce ) };
-var hoverout = function() { g3.animate({ transform: 'r0,50,50' }, 1000, mina.bounce ) };
+var hoverover = function() { elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce ) };
+var hoverout = function() { elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce ) };
 $('#svg3').append(svg_tag);
 //var svgEl = SVG.getElementById('shadow');
 //	$('#svg2').hover(

@@ -15,11 +15,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Pad_icon" ></use>
-			</svg>
-			</div>
+		<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
 				<p>Несмотря на то, что магазин идеально подходит новичкам, функционал магазина от этого никак не пострадал, и его с легкостью могут использовать профессионалы. Для создания своего магазина с нуля вам не нужны знания языков программирования и настройки серверов: все действия происходят через браузер в интуитивно-понятном интерфейсе. Даже если у вас возникнут вопросы, вы всегда сможете получить помощь.</p>
@@ -29,11 +25,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Settings_icon" ></use>
-			</svg>
-			</div>
+		<svg id="svg1" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Управление и настройка, через удобную Админ-панель.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -43,11 +35,7 @@
 	</li>
 	<li>
 		<div class="spoiler-link">
-			<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#List_icon" ></use>
-			</svg>
-			</div>
+			<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
 				<p>
@@ -58,11 +46,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Market_icon" ></use>
-			</svg>
-			</div>
+		<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Управление товарами</h2>
 			<div class="spoiler-body">
 				<p>
@@ -73,11 +57,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Delivery_icon" ></use>
-			</svg>
-			</div>
+		<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
 				<p>
@@ -88,11 +68,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Paid_icon" ></use>
-			</svg>
-			</div>
+		<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Поддержка оплаты заказов, через любые сервисы.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -103,11 +79,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Soc_icon" ></use>
-			</svg>
-			</div>
+		<svg class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Интеграция с сайтом</h2>
 			<div class="spoiler-body">
 				<p> Интернет-магазин может быть лишь частью вашего сайта. К примеру, пользователь может почитать интересные статьи о вас и характеристике ваших товаров, после чего перейти в интернет-магазин и что-то купить.</p>
@@ -119,25 +91,45 @@
 <div></div>
 </div>
 <script>
+
+$(document).ready(function(){
+// Создать фигуру
+var s3 = Snap('#svg1');
+//var g3 = s3.group();
+var circle;
+var elipS;
+//s3.circle(150, 150, 100);
+Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
+function onSVGLoaded( data ){
+//console.log('#Pad_icon', data);
+	g3 = data.select("#Pad_icon");
+	elipS = data.select("#RoundArrow_4_");
+	s3.append( g3 );
+//	var pad = data.select("#Pad_icon");
+//	var usePad = pad.use();
+//    g.append(usePad);
+//	s2.hover( hoverover, hoverout );
+//	$('#svg2 g').append('<svg viewBox="0 0 100 100"><use xlink:href="#Pad_icon"></use></svg>');
+
+}
+
 $( ".spoiler-link" ).click(function() {
 if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color','');		
+	$('h2', this).css('color','#4C4646');
+	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
+	g3.attr({fill: '#4C4646'});	
 } else {
 	$('h2', this).css('color','#d7844d');
+	elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce );
+	g3.attr({fill: '#d7844d'});	
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
-$(document).ready(function(){
-var SVG = document.getElementById("svg_arrow");	
-var svgEl = SVG.getElementById('shadow');
-	$( ".side_arrow" ).hover(
-  function() {
-    $(SVG).css("opacity","0.2");
-  }, function() {
-    $(SVG).css("opacity","1");
-  }
-);
+
 });
+
+
+
 </script>
 
 
