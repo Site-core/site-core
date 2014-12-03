@@ -57,7 +57,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg class="description_icons" id="SettingsIconPlace" viewBox="0 0 56 56"></svg>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
 				<p>
@@ -100,15 +100,26 @@ var mailBox = Snap('#mailBuyBox')
 //var g3 = s3.group();
 var circle;
 
+var loadSnapIcon = function (svgPlaceId, loadUrl, iconId ) {
+	paper = Snap( svgPlaceId );
+	Snap.load( loadUrl , function ( data ){
+	var iconChoose = data.select( iconId );
+	paper.append( iconChoose );
+});
+}
+
 //s3.circle(150, 150, 100);
 Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
 Snap.load("/img/mailBuy.svg", function ( data ){
 	
-	mailOpened = data.select('#OpenedGrad', '#OpenedCont');
+	mailOpenedGrad = data.select('#OpenedGrad');
+	mailOpenedTop = data.select('#OpenedCont');
 	mailClosed = data.select('#TopBorder');
-	mailBox.hover( hoverover, hoverout );
 	mailBox.append( data );
 } ) ;
+
+loadSnapIcon('#SettingsIconPlace',"/img/Description_icons2.svg", '#Settings_icon');
+
 function onSVGLoaded( data ){
 //console.log('#Pad_icon', data);
 	g3 = data.select("#Pad_icon");
@@ -122,12 +133,14 @@ function onSVGLoaded( data ){
 }
 
 var hoverover = function () { 
-	mailOpened.attr({ display: ''});
-	mailClosed.attr({ display: 'none'});
+	mailOpenedGrad.animate({ opacity: '1'}, 300, mina.linear);
+	mailClosed.animate({ opacity: '0'}, 150, mina.linear);
+	mailOpenedTop.animate({ opacity: '1'}, 300, mina.linear);
 };
 var hoverout = function () {
-	mailOpened.attr({ display: 'none'});
-	mailClosed.attr({ display: ''});
+	mailOpenedGrad.animate({ opacity: '0'}, 150, mina.linear);
+	mailClosed.animate({ opacity: '1'}, 300, mina.linear);
+	mailOpenedTop.animate({ opacity: '0'}, 150, mina.linear);
 };
 
 $( ".spoiler-link" ).click(function() {
@@ -147,6 +160,8 @@ if(!$('.spoiler-body', this).is(":visible")){
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
+
+$('#mailBuyBox').hover( hoverover, hoverout );
 
 });
 

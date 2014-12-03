@@ -7,10 +7,10 @@
 	<stop  offset="0" style="stop-color:#000000"/>
 	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.2"/>
 </linearGradient>
-<polygon id="OpenedGrad" display="none" fill="url(#OpenedGrad_1_)" points="50,55 24.415,33.58 49.925,12.323 75.585,33.127 "/>
+<polygon id="OpenedGrad" opacity="0" fill="url(#OpenedGrad_1_)" points="50,55 24.415,33.58 49.925,12.323 75.585,33.127 "/>
 <polygon fill="#4B4545" points="75.585,34.347 74.942,33.58 50,54.457 25.057,33.597 24.415,34.364 49.679,55.493 50,55.493 
 	50.321,55.493 "/>
-<polygon id="OpenedCont" display="none" fill="#4B4545" points="76.022,32.998 75.369,33.764 50,12.887 24.63,33.747 23.978,32.981 
+<polygon id="OpenedCont" opacity="0" fill="#4B4545" points="76.022,32.998 75.369,33.764 50,12.887 24.63,33.747 23.978,32.981 
 	49.673,11.851 50,11.851 50.326,11.851 "/>
 <path fill="#4B4545" d="M74.984,33.127v1h0.028v31.192l-15.531-16l-0.718,0.696l15.955,16.438H25.32l15.955-16.438l-0.718-0.696
 	L24.987,65.36V34.127h0.018v-1h-1.018v34.326h52.026V33.127H74.984z M24.987,66.425l0.029,0.028h-0.029V66.425z"/>
