@@ -15,7 +15,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Cms_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
 				<p>Несмотря на то, что магазин идеально подходит новичкам, функционал магазина от этого никак не пострадал, и его с легкостью могут использовать профессионалы. Для создания своего магазина с нуля вам не нужны знания языков программирования и настройки серверов: все действия происходят через браузер в интуитивно-понятном интерфейсе. Даже если у вас возникнут вопросы, вы всегда сможете получить помощь.</p>
@@ -25,7 +25,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="svg1" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Card_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Управление и настройка, через удобную Админ-панель.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -35,7 +35,7 @@
 	</li>
 	<li>
 		<div class="spoiler-link">
-			<svg class="description_icons" viewBox="0 0 56 56"></svg>
+			<svg id="Delivery_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
 				<p>
@@ -46,7 +46,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="svg1" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Управление товарами</h2>
 			<div class="spoiler-body">
 				<p>
@@ -57,7 +57,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="svg1" class="description_icons" id="SettingsIconPlace" viewBox="0 0 56 56"></svg>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
 				<p>
@@ -68,7 +68,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="svg1" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Поддержка оплаты заказов, через любые сервисы.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -79,7 +79,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="svg1" class="description_icons" viewBox="0 0 56 56"></svg>
 			<h2>Интеграция с сайтом</h2>
 			<div class="spoiler-body">
 				<p> Интернет-магазин может быть лишь частью вашего сайта. К примеру, пользователь может почитать интересные статьи о вас и характеристике ваших товаров, после чего перейти в интернет-магазин и что-то купить.</p>
@@ -100,15 +100,25 @@ var mailBox = Snap('#mailBuyBox')
 //var g3 = s3.group();
 var circle;
 
-//s3.circle(150, 150, 100);
-Snap.load("/img/Description_icons2.svg", onSVGLoaded ) ;
+var iconIdArray = ['#Cms_icon','#Card_icon','#Delivery_icon','#Settings_icon','#List_icon','#Mail_icon','#Market_icon','#Pad_icon','#Paid_icon','#Soc_icon','#News_icon','#Personal_icon'];
+var loadSnapIcon = function ( iconUrl ) {
+	Snap.load(iconUrl, function (data) {
+		for (var i = 0; i < iconIdArray.length; i++) {
+			paper = Snap( iconIdArray[i] + '_paper' );
+			var iconChoose = data.select(iconIdArray[i]);
+			paper.append(iconChoose);
+		};			
+	});		
+}
+loadSnapIcon('/img/Description_icons2.svg');
 Snap.load("/img/mailBuy.svg", function ( data ){
 	
-	mailOpened = data.select('#OpenedGrad', '#OpenedCont');
+	mailOpenedGrad = data.select('#OpenedGrad');
+	mailOpenedTop = data.select('#OpenedCont');
 	mailClosed = data.select('#TopBorder');
-	mailBox.hover( hoverover, hoverout );
 	mailBox.append( data );
 } ) ;
+
 function onSVGLoaded( data ){
 //console.log('#Pad_icon', data);
 	g3 = data.select("#Pad_icon");
@@ -122,33 +132,32 @@ function onSVGLoaded( data ){
 }
 
 var hoverover = function () { 
-//	mailOpened.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
-//	mailClosed.animate({ display: 'none'}, 300, mina.linear);
-	mailClosed.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce);
+	mailOpenedGrad.animate({ opacity: '1'}, 300, mina.linear);
+	mailClosed.animate({ opacity: '0'}, 150, mina.linear);
+	mailOpenedTop.animate({ opacity: '1'}, 300, mina.linear);
 };
 var hoverout = function () {
-//	mailOpened.animate({ display: 'none'}, 300, mina.linear);
-//	mailClosed.animate({ display: ''}, 300, mina.linear);
+	mailOpenedGrad.animate({ opacity: '0'}, 150, mina.linear);
+	mailClosed.animate({ opacity: '1'}, 300, mina.linear);
+	mailOpenedTop.animate({ opacity: '0'}, 150, mina.linear);
 };
 
 $( ".spoiler-link" ).click(function() {
 var this_svg = Snap('#'+$('svg', this).attr('id'));
-var elipS = this_svg.select('#RoundArrow_4_');
-var padJoy = this_svg.select('.padJoy');
+var elipS = this_svg.select('.RoundArrow');
 if(!$('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
-	elipS.animate({ transform: 'r90, 25,25' }, 1000, mina.bounce );
+	elipS.animate({ transform: 'r90, 25,25' }, 800, mina.bounce );
 	elipS.animate({ fill: '#d7844d'}, 300, mina.linear);
-	padJoy.animate({ opacity: '0.6'}, 300, mina.linear);	
-} else {	
+} else {
 	$('h2', this).css('color','#4C4646');
-	elipS.animate({ transform: 'r0, 25,25' }, 1000, mina.bounce );
-	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);
-	padJoy.animate({ opacity: '1'}, 300, mina.linear);		
+	elipS.animate({ transform: 'r0, 25,25' }, 800, mina.bounce );
+	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);	
 }
 $('.spoiler-body', this).stop().slideToggle(300);
 });
 
+$('#mailBuyBox').hover( hoverover, hoverout );
 });
 
 
