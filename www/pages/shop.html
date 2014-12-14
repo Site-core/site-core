@@ -15,7 +15,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Pad_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Pad_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Легкое управление интернет магазином</h2>
 			<div class="spoiler-body">
 				<p>Несмотря на то, что магазин идеально подходит новичкам, функционал магазина от этого никак не пострадал, и его с легкостью могут использовать профессионалы. Для создания своего магазина с нуля вам не нужны знания языков программирования и настройки серверов: все действия происходят через браузер в интуитивно-понятном интерфейсе. Даже если у вас возникнут вопросы, вы всегда сможете получить помощь.</p>
@@ -25,7 +25,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Settings_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Settings_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Управление и настройка, через удобную Админ-панель.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -35,7 +35,7 @@
 	</li>
 	<li>
 		<div class="spoiler-link">
-			<svg id="List_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+			<svg id="List_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
 				<p>
@@ -46,7 +46,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Market_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Market_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Управление товарами</h2>
 			<div class="spoiler-body">
 				<p>
@@ -57,7 +57,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Delivery_icon_paper" class="description_icons" id="SettingsIconPlace" viewBox="0 0 56 56"></svg>
+		<svg id="Delivery_icon_paper" class="description_icons" id="SettingsIconPlace" viewBox="-11.2 -11.5 111.2 111.5"></svg>
 			<h2>Доставка товаров</h2>
 			<div class="spoiler-body">
 				<p>
@@ -68,7 +68,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Paid_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Paid_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Поддержка оплаты заказов, через любые сервисы.</h2>
 			<div class="spoiler-body">
 				<p>
@@ -79,7 +79,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<svg id="Soc_icon_paper" class="description_icons" viewBox="0 0 56 56"></svg>
+		<svg id="Soc_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Интеграция с сайтом</h2>
 			<div class="spoiler-body">
 				<p> Интернет-магазин может быть лишь частью вашего сайта. К примеру, пользователь может почитать интересные статьи о вас и характеристике ваших товаров, после чего перейти в интернет-магазин и что-то купить.</p>
@@ -110,7 +110,7 @@ var loadSnapIcon = function ( iconArray, iconUrl ) {
 		};			
 	});		
 }
-loadSnapIcon( iconShopIdArray,'/img/Description_icons2.svg' );
+loadSnapIcon( iconShopIdArray,'/img/Description_icons_shop.svg' );
 Snap.load("/img/mailBuy.svg", function ( data ){
 	
 	mailOpenedGrad = data.select('#OpenedGrad');
@@ -147,11 +147,11 @@ var this_svg = Snap('#'+$('svg', this).attr('id'));
 var elipS = this_svg.select('.RoundArrow');
 if(!$('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
-	elipS.stop().animate({ transform: 'r90, 25,25' }, 800, mina.bounce );
+	elipS.stop().animate({ transform: 'r90, 44.5,44.5' }, 800, mina.bounce );
 	elipS.animate({ fill: '#d7844d'}, 300, mina.linear);
 } else {
 	$('h2', this).css('color','#4C4646');
-	elipS.stop().animate({ transform: 'r0, 25,25' }, 800, mina.bounce );
+	elipS.stop().animate({ transform: 'r0, 44.5,44.5' }, 800, mina.bounce );
 	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);	
 }
 $('.spoiler-body', this).stop().slideToggle(300);
