@@ -100,7 +100,7 @@ var mailBox = Snap('#mailBuyBox')
 //var g3 = s3.group();
 var circle;
 
-var iconShopIdArray = ['#Pad_icon', '#Settings_icon', '#List_icon', '#Market_icon', '#Delivery_icon', '#Paid_icon', '#Soc_icon'];
+var iconIdArray = ['#Pad_icon', '#Settings_icon', '#List_icon', '#Market_icon', '#Delivery_icon', '#Paid_icon', '#Soc_icon'];
 var loadSnapIcon = function ( iconArray, iconUrl ) {
 	Snap.load(iconUrl, function (data) {
 		for (var i = 0; i < iconArray.length; i++) {
@@ -110,7 +110,7 @@ var loadSnapIcon = function ( iconArray, iconUrl ) {
 		};			
 	});		
 }
-loadSnapIcon( iconShopIdArray,'/img/Description_icons_shop.svg' );
+loadSnapIcon( iconIdArray,'/img/Description_icons_shop.svg' );
 Snap.load("/img/mailBuy.svg", function ( data ){
 	
 	mailOpenedGrad = data.select('#OpenedGrad');

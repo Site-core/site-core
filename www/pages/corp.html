@@ -3,11 +3,7 @@
 	<h2 class="headline">Что вы получите:</h2>
 	<li>
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Cms_icon" ></use>
-			</svg>
-			</div>
+		<svg id="Cms_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Удобная система добавления контента</h2>
 			<div class="spoiler-body">
 				<p>Вы сможете добавлять любую текстовую или графическую информация на ваш сайт, без ограничения по количеству страниц. Благодаря визуальной, интуитивной системе управления контентом, Вам не потребуется никакие технические знаний для обновления, добавления и редактирования информации.</p>
@@ -17,11 +13,7 @@
 	<li>
 		
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Card_icon" ></use>
-			</svg>
-			</div>
+		<svg id="Personal_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Персонализация</h2>
 			<div class="spoiler-body">
 				<p>Не беспокойтесь о том, что ваш сайт будет выглядеть как и все другие, мы разработаем индивидуальный дизайн с удобным интуитивно-понятным интерфейсом, исходя из ваших требований. Сайт будет адаптирован и одинаково удобным, как на компьютере, так и на смартфоне или планшете.</p>
@@ -31,11 +23,7 @@
 	<li>
 	
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#News_icon" ></use>
-			</svg>
-			</div>
+		<svg id="News_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Новости</h2>
 			<div class="spoiler-body">
 				<p>Держите ваших клиентов в курсе последний событий происходящий с вашей компанией, уведомляйте об обновление продуктов, акциях и вакансиях.</p>
@@ -44,11 +32,7 @@
 	</li>
 	<li>
 		<div class="spoiler-link">
-		<div class="description_icons">
-			<svg viewBox="0 0 100 100">
-				<use xlink:href="/img/Description_icons.svg#Mail_icon" ></use>
-			</svg>
-			</div>
+		<svg id="Mail_icon_paper" class="description_icons" viewBox="0 0 100 100"></svg>
 			<h2>Корпоративная почта</h2>
 			<div class="spoiler-body">
 				<p>Вы получите уникальный корпоративный email адрес с названием вашей фирмы, вида service@site-core.ru Можно организовать большую корпаративную сеть и подключить к ней всех ваших сотрудников, управлять доступом к различным перепискам, создавать email конференции для совместного решения различных вопросов.</p>
@@ -61,12 +45,34 @@
 </div>
 
 <script>
+$(document).ready(function(){
+	var iconIdArray = ['#Cms_icon', '#Personal_icon', '#News_icon', '#Mail_icon'];
+var loadSnapIcon = function ( iconArray, iconUrl ) {
+	Snap.load(iconUrl, function (data) {
+		for (var i = 0; i < iconArray.length; i++) {
+			paper = Snap( iconArray[i] + '_paper' );
+			var iconChoose = data.select(iconArray[i]);
+			paper.append(iconChoose);
+		};			
+	});		
+}
+
+loadSnapIcon( iconIdArray,'/img/Description_icons_shop.svg' );
+
 $( ".spoiler-link" ).click(function() {
-if($('.spoiler-body', this).is(":visible")){
-	$('h2', this).css('color','');		
-} else {
+var this_svg = Snap('#'+$('svg', this).attr('id'));
+var elipS = this_svg.select('.RoundArrow');
+if(!$('.spoiler-body', this).is(":visible")){
 	$('h2', this).css('color','#d7844d');
+	elipS.stop().animate({ transform: 'r90, 44.5,44.5' }, 800, mina.bounce );
+	elipS.animate({ fill: '#d7844d'}, 300, mina.linear);
+} else {
+	$('h2', this).css('color','#4C4646');
+	elipS.stop().animate({ transform: 'r0, 44.5,44.5' }, 800, mina.bounce );
+	elipS.animate({ fill: '#4C4646'}, 300, mina.linear);	
 }
 $('.spoiler-body', this).stop().slideToggle(300);
+});
+
 });
 </script>
